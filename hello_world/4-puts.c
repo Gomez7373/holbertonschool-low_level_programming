@@ -2,7 +2,9 @@
 /**
 * main - prints a text
 *
-* Return : Always 0 (Success)
+* Description: 'the progrem will print a text'
+*
+* Return: Always 0 (Success)i
 */
 int main(void)
 {
