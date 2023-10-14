@@ -1,6 +1,6 @@
 #include <stdio.h>
 /**
-* main - pnt text
+* main - prints a text
 *
 * Return : 0 (SUCCESS)
 */
