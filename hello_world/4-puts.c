@@ -1,14 +1,13 @@
 #include <stdio.h>
 /**
-* main - prints a text
+* main - It prints a text.
 *
-* Description: 'the progrem will print a text'
+* Description: 'The program will print a text.'
 *
-* Return: Always 0 (Success)i
+* Return: Always 0 (Success)
 */
 int main(void)
 {
 puts("\"Programming is like building a multilingual puzzle");
 return (0);
 }
-
