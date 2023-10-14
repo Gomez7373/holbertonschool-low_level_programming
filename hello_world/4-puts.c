@@ -3,7 +3,9 @@
 /**
  * main (text)
  *
- * return : 0
+ *
+ *
+ * Return : 0 (SUCCESS)
  * 
  */
 {
