@@ -1,6 +1,6 @@
 #include <stdio.h>
 /**
- * main prints mult. type of size on pc 
+ * main - prints mult. type of size on pc 
  * 
  * Description: 'The program will print milt. sizes'
  *
