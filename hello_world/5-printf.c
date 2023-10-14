@@ -8,6 +8,6 @@
  */
 int main(void)
 {
-("\"words");
+printf("\"words");
 return (0);
-}	
+}
