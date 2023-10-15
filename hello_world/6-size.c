@@ -8,17 +8,12 @@
  */
 int main(void)
 {
-char s;
-int h;
-long int e;
-long long int i; 
-float l;
 
-printf("Size of a char: %lu byte(s)\n", sizeof(s));
-printf("Size of an int: %lu byte(s)\n", sizeof(h));
-printf("Size of a long int: %lu byte(s)\n", sizeof(e));
-Printf("Size of a long long int: %lu byte(s)\n", sizeof(i));
-printf("Size of a float: %lu byte (S)\n", sizeof(l));
+printf("Size of a char: %lu byte(s)\n", sizeof(char));
+printf("Size of an int: %lu byte(s)\n", sizeof(int));
+printf("Size of a long int: %lu byte(s)\n", sizeof (long int));
+Printf("Size of a long long int: %lu byte(s)\n", sizeof(long long int));
+printf("Size of a float: %lu byte (S)\n", sizeof(float));
 				   
 return (0);
 }	
