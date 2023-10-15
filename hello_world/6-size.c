@@ -1,9 +1,9 @@
 #include <stdio.h>
 /**
 *main - prints mult type of size on pc
-*
 *Return: Always 0 (Success)
 */
+
 int main(void)
 {
 printf("Size of a char: %lu byte(s)\n", sizeof(char));
