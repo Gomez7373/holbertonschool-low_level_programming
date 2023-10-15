@@ -1,11 +1,11 @@
 #include <stdio.h>
 /**
- * main - prints mult. type of size on pc 
- * 
- * Description: 'The program will print milt. sizes'
- *
- *Return: Always 0 (Success)
- */
+* main - prints mult. type of size on pc 
+* 
+* Description: 'The program will print milt. sizes'
+*
+*Return: Always 0 (Success)
+*/
 
 int main(void)
 {
