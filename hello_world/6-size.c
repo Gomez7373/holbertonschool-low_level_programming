@@ -2,7 +2,7 @@
 /**
  * main-prints dif size
  * Return: Always 0 (Success)
- * */
+ */
 
 int main(void)
 {
