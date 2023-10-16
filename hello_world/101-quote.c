@@ -1,7 +1,9 @@
 #include<stdio.h>
 #include<unistd.h>
 /**
-* main -  Prints "It will print a text" of Dora Korpar
+* main -  Prints  Dora Korpar
+*
+*Description: "This code will write and print"
 *
 * return: Always 1.
 */
