@@ -1,9 +1,9 @@
 #include<stdio.h>
 #include<unistd.h>
 /**
-* main -  Prints  Dora Korpar
+* main -Prints "Dora Korpar"
 *
-*Description: "This code will write and print"
+* Description: "This code will write and print"
 *
 * return: Always 1.
 */
