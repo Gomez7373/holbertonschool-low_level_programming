@@ -5,6 +5,6 @@
 */
 int main(void)
 {
-write(2,"and that oice of art is usful\n" - "Dora Korpar, 2015-10-19\n");
+write(2, "and that oice of art is usful\n" - "Dora Korpar, 2015-10-19\n");
 return (1);	
 }
