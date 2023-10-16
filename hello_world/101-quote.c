@@ -2,6 +2,7 @@
 #include<unistd.h>
 /**
 * main -  prints "It will print a text" of Dora Korpar
+*
 * return: Always 1.
 */
 int main(void)
