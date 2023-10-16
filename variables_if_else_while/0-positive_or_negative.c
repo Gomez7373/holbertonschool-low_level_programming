@@ -1,14 +1,17 @@
 #include<stdio.h>
 #include<time.h>
 #include<stdio.h>
+
 /**
-*main - assign random number to n.
+*main - Determines if a number is positive,egative or zero.
 *
-*Description: The program.
+*Description:Determines if positive, negative or zero. 
 *
-* return Always 0 (Success)
+*Returns: Always 0 (Success)
 */
+
 int main(void)
+
 {
 int n;
 srand(time(0));
