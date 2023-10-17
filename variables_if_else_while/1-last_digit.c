@@ -1,3 +1,4 @@
+#include <stdio.h>
 #include <stdlib.h>
 #include <time.h>
 /**
@@ -12,11 +13,18 @@ int main(void)
 
 	srand(time(0));
 	n = rand() - RAND_MAX / 2;
-	if (n > 0)
+	if (n % 10 > 5)
 {
-	printf("%d is" /*contineu the code here*/
+	printf("%d is"
+}	
+	if else (n % 10 == 0)
+{
+	printf(""
+
 }
-
-
+	else
+{
+	pritf(""
+}
 	return (0);
 }	
