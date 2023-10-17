@@ -7,7 +7,7 @@
 int main(void)
 
 	int s;
-
+{
 	for (s = 0; s < 26; s++)
 {
 	putchar('a' + s);
