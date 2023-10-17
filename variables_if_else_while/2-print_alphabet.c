@@ -11,6 +11,9 @@ int main(void)
 	for (s = 0; s < 26; s++)
 {
 	putchar('a' + s);
+        
 }
+	putchar('\n');
+
 	return (0);
 }
