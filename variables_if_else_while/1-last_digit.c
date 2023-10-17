@@ -4,6 +4,7 @@
 /**
  * main - code gives random numbers to the variable n
  *
+ * Return: Always 0 (Success)
  */
 
 /*betty style doc for function main goes there */
@@ -17,12 +18,12 @@ int main(void)
 	n = rand() - RAND_MAX / 2;
 	s = n % 10;
 
-	printf("last digit of %d is %d ", n, s);
+	printf("Last digit of %d is %d ", n, s);
 
 	if (s > 5)
 {
 	printf("and is greater than 5\n");
-}	
+}
 	else if (s == 0)
 {
 	printf("and is 0\n");
@@ -31,5 +32,5 @@ int main(void)
 {
 	printf("and is less than 6 and not 0\n");
 }
-	return (0);
-}	
+return (0);
+}
