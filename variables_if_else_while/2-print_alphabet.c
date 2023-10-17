@@ -1,19 +1,17 @@
 #include<stdio.h>
-#include<>
-#include<>
-#include<>
 /**
  * main - Lower case prints.
  *
  * Return: Always 0 (Success)
  */
 int main()
-	char start = 'a';
-	char end = 'z';
+	char = 'a';
+	char = 'z';
 
-	for (char letter = start; letter <= end; letter++)
-{
-	putchar('\n');
+	for (char letter = ; letter <= end; letter++)
+{	
+	putchar("%c",letter);
+}
 	return 0;
 }
 	
