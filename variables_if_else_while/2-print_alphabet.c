@@ -5,12 +5,12 @@
  * Return: Always 0 (Success)
  */
 int main()
-	char = 'a';
-	char = 'z';
+	char letter;
 
-	for (char letter = ; letter <= end; letter++)
+	for (letter = 'a' ; letter <= 'z'; letter++)
+	putchar(letter);
 {	
-	putchar("%c",letter);
+	putchar('\n');
 }
 	return 0;
 }
