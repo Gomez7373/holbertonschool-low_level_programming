@@ -8,6 +8,7 @@ int main(void)
 
 {
 int s;
+int i;
 char line[] = "excludes q and e";
 
 for (s = 0; s < 24; s++)
@@ -16,7 +17,7 @@ for (s = 0; s < 24; s++)
 }
 if (line[i] != 'e' && line[i] != 'y')
 {
-	putchar("%c", line[i]), \n;
+	putchar( line[i]), \n;
 }
 return (0);
 }
