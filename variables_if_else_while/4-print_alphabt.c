@@ -13,7 +13,7 @@ char line[] = "excludes q and e";
 
 for (s = 0; s < 24; s++)
 {
-	putchar('a' + s), \n;
+	putchar('a' + s);
 }
 if (line[i] != 'e' && line[i] != 'y')
 {
