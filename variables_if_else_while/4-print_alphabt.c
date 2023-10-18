@@ -14,7 +14,7 @@ for (s = 0; s < 24; s++)
 {
 	putchar('a' + s);
 }
-if (line[i] != 'e' && line[i] != 'y' )
+if (line[i] != 'e' && line[i] != 'y')
 {
 	putchar("%c", line[i]), \n;
 }
