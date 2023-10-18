@@ -6,18 +6,18 @@
  */
 int main (void)
 {
-	int s;
-	int g;
+int s;
+int g;
 
-	for (s = 0; s < 26; s++)
+for (s = 0; s < 26; s++)
 {
-	putchar('a' + s);
-}	
-	for (g = 0; g < 26; g++)
-{
-	putchar('A' + g);
+putchar('a' + s);
 }
-	putchar('\n');
+for (g = 0; g < 26; g++)
+{
+putchar('A' + g);
+}
+putchar('\n');
 
-	return (0);
+return (0);
 }
