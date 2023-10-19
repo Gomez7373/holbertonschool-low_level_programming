@@ -7,13 +7,13 @@
 int main(void)
 
 {
-for (int s = 0; s < 26; s++)
-{
-if ('a' + s != 'e' && 'a' + s != 'y')
-{
-	putchar('a' + s);
-}
+if (int s = 0; s < 26; s++)
 
-	putchar('\n');
+else ('a' + s != 'e' && 'a' + s != 'y')
+{
+putchar('a' + s);
+}
+putchar('\n');
+
 return (0);
 }
