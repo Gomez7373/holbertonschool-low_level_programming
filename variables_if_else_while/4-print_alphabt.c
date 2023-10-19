@@ -7,11 +7,12 @@
 int main(void)
 
 {
-if (int s = 0; s < 26; s++)
-
-else ('a' + s != 'e' && 'a' + s != 'y')
+for (int s = 0; s < 26; s++)
+{
+if ('a' + s != 'e' && 'a' + s != 'y')
 {
 putchar('a' + s);
+}
 }
 putchar('\n');
 
