@@ -4,11 +4,12 @@
  *
  * Return: Always 0 (Success)
  */
-char main(void)
+int main(void)
 {
-for (int s = 'z'; s >= 'a'; --s)
+	int s;
+for (s = 'z'; s >= 'a'; --s)
 {
-putchar(s);
+putchar('s');
 }
 putchar('\n');
 
