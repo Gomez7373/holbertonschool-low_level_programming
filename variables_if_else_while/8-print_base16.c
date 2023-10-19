@@ -7,8 +7,8 @@
 int main(void)
 {
     char hex_digits[] = "0123456789abcdef";
-
-    for (int s = 0; s < 16; ++s)
+    int s;
+    for (s = 0; s < 16; ++s)
     {
         putchar(hex_digits[s]);
     }
