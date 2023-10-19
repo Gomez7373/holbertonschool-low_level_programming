@@ -7,17 +7,13 @@
 int main(void)
 
 {
-int s;
-int i;
-char line[] = "excludes q and e";
-
-for (s = 0; s < 26; s++)
+for (int s = 0; s < 26; s++)
+{
+if ('a' + s != 'e' && 'a' + s != 'y')
 {
 	putchar('a' + s);
 }
-if (line[i] != 'e' && line[i] != 'y')
-{
-	putchar( line[i]);
-}
+
+	putchar('\n');
 return (0);
 }
