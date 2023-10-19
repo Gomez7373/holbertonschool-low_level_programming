@@ -7,7 +7,7 @@
 int main(void)
 {
 	int s;
-for (int s = 0; s < 26; s++)
+for (s = 0; s < 26; s++)
 {
 if ('a' + s != 'e' && 'a' + s != 'y')
 {
