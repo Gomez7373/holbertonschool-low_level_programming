@@ -9,7 +9,7 @@ int main(void)
 	int s;
 for (s = 0; s < 26; s++)
 {
-if ('a' + s != 'e' && 'a' + s != 'y')
+if ('a' + s != 'e' && 'a' + s != 'q')
 {
 putchar('a' + s);
 }
