@@ -6,25 +6,17 @@
  * Return: void
  */
 
-/**
- * void print_alphabet_x10(void)
- */
-
-void print_alphabet(void)
+void print_alphabet_x10(void)
 {
+    int s;
+    int count;
 
-	int s;
-	int count;
-
-	for (count = 0; count < 10); count++;
-
-{
-	for (s = 'a'; s <= 'z'; s++);
-}
-
-{
-	_putchar(s);
-}
-
-	_putchar('\n');
+    for (count = 0; count < 10; count++)
+    {
+        for (s = 'a'; s <= 'z'; s++)
+        {
+            _putchar(s);
+        }
+        _putchar('\n');
+    }
 }
