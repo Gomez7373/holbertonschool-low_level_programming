@@ -1,6 +1,9 @@
 #include "main.h"
+
 /**
- * File: 1-alphabet.c
+ * print_alphabet - it prints the alphabet.
+ *
+ * Return - void
  */
 
 void print_alphabet(void)
