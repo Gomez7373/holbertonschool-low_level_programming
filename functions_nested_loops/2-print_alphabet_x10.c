@@ -6,19 +6,24 @@
  * Return: void
  */
 
-void print_alphabet_x10(void)
+/**
+ * void print_alphabet_x10(void)
+ */
+print_alphabet_10(void)
 {
 
-char s;
-int count;
+	char s;
+	int count;
 
-for (count = 0; count < 10; count++)
+	for (count = 0; count < 10; count++)
+
 {
-for (s = ('a'; s <= 'z'; s++)
+	for (s = ('a'); s <= 'z'; s++);
 }
+
 {
-_putchar(s);
+	_putchar(s);
 }
 
-_putchar('\n');
+	_putchar('\n');
 }
