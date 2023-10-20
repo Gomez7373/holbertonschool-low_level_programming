@@ -22,7 +22,9 @@ _putchar('\n');
 
 return (0);
 }
-// void _putchar
+/**
+ * void _putchar
+ */
 void _putchar(char c)
 {
 putchar(c);
