@@ -7,11 +7,11 @@
 
 int main(void)
 {
-{
-	printf('char'), 'c';
-}
-{
-	ptintf('\n');
-}
+
+	printf('_putchar'), 'c';
+
+
+	printf('\n');
+
 return (0);
 }
