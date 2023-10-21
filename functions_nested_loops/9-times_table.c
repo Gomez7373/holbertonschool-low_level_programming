@@ -18,7 +18,7 @@ void times_table(void)
             else
             {
               
-	        _putchar(',');	
+	        _putchar('*');	
 	       
 
                 if (result < 10)
@@ -31,7 +31,7 @@ void times_table(void)
             }
 
             if (col < 9)
-                _putchar(' ');
+                _putchar(';');
             else
                 _putchar('\n');
         }
