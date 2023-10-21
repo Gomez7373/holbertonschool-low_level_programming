@@ -15,7 +15,7 @@ int print_last_digit(int n)
         ld = -ld;
     }
 
-    _putchar("%d", ld);
+    _putchar("%c", ld);
 
     return ld;
 }
