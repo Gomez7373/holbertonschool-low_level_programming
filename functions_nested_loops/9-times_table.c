@@ -5,13 +5,13 @@
  */
 void times_table(void)
 {
-int r, c;
+int ro, co, re ;
 
 for (r = 0; r <= 9; r++)
 {
 for (c = 0; c <= 9; c++)
 {
-int result = r * c;
+int re = r * c;
 
 if (c > 0)
 {
@@ -19,20 +19,19 @@ _putchar(',');
 _putchar(' ');
 }
 
-if (result < 10)
+if (re < 10)
 {
 _putchar(' ');
 }
 
-if (result >= 10)
+if (re >= 10)
 {
-_putchar(result / 10 + '0');
+_putchar(re / 10 + '0');
 }
 
-_putchar(result % 10 + '0');
+_putchar(re % 10 + '0');
 }
 _putchar('\n');
 }
-return (0);
 }
 
