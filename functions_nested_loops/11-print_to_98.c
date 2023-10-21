@@ -21,7 +21,7 @@ void print_to_98(int n)
 
 int main(void)
 {
-    print_to_98(10);  // You can replace 10 with any other starting number
+    print_to_98(10);
     return 0;
 }
 
