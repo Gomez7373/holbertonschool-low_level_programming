@@ -24,7 +24,7 @@ int result;
 {
 
 	_putchar(',');
-	_putchar(' ');
+//	_putchar(' ');
 	if (result < 10)
 	_putchar(' ');
 	else
