@@ -28,17 +28,20 @@ int result;
  	_putchar(' ');
  
 	if (result < 10)
+
 	else
+{
 	_putchar((result / 10) + '0');
 
 	_putchar((result % 10) + '0');
+	if (col < 9)
 }
 
-	if (col < 9)
 	_putchar(' ');
-	else
-	_putchar('\n');
+	_putchar(',');
+	
 }
+_putchar('\n');
 }
 }
 
