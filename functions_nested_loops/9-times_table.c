@@ -28,10 +28,8 @@ int result;
  	_putchar(' ');
  
 	if (result < 10)
-/**
-  _putchar(' ');
-*/
-  else
+
+	else
 	_putchar((result / 10) + '0');
 
 	_putchar((result % 10) + '0');
