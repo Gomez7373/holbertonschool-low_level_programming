@@ -1,30 +1,35 @@
+#include "main.h"
 #include <stdio.h>
 
-int _isupper(int c) {
 /**
- * Check if the character is within the ASCII range for uppercase letters
- * ASCII values for uppercase letters: A=65, B=66, ..., Z=90
- * return (c >= 65 && c <= 90)
+ * _isupper - Checks if a character is uppercase.
+ * @c: The character to be checked.
+ *
+ * Return: 1 if c is uppercase, 0 otherwise.
  */
+int _isupper(int c)
+{
+    return (c >= 'A' && c <= 'Z');
 }
 
-int main() {
-   
-    char uppercaseChar = 'C';
-    char lowercaseChar = 'c';
+int main(void)
+{
+    char ch;
 
-    if (_isupper(uppercaseChar)) {
-        printf("%c is uppercase.\n", uppercaseChar);
-    } else {
-        printf("%c is not uppercase.\n", uppercaseChar);
+    printf("Check all uppercase characters (from 'A' to 'Z')\n");
+    for (ch = 'A'; ch <= 'Z'; ch++)
+    {
+        if (_isupper(ch))
+            printf("Uppercase character: %c\n", ch);
     }
 
-    if (_isupper(lowercaseChar)) {
-        printf("%c is uppercase.\n", lowercaseChar);
-    } else {
-        printf("%c is not uppercase.\n", lowercaseChar);
+    printf("\nCheck all characters except uppercase characters (From 32 to 126 in the ASCII table)\n");
+    for (ch = 32; ch <= 126; ch++)
+    {
+        if (!_isupper(ch))
+            printf("Not an uppercase character: %c\n", ch);
     }
 
-    return 0;
+    return (0);
 }
 
