@@ -13,6 +13,6 @@ clean:
 oclean: 
 	$(CC) $(OBJ)
 
-fclean: clean ocleanobj
+fclean: clean oclean
 
 re: fclean all
