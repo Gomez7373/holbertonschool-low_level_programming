@@ -7,11 +7,11 @@ void times_table(void)
 {
 int ro, co, re ;
 
-for (r = 0; r <= 9; r++)
+for (re = 0; re <= 9; r++)
 {
 for (c = 0; c <= 9; c++)
 {
-int re = r * c;
+int re = re * c;
 
 if (c > 0)
 {
