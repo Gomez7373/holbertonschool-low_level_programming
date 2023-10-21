@@ -15,11 +15,9 @@ void print_to_98(int n)
         else
             n--;
     }
-
-    printf("%d\n", n);
-}
-
-{
+    {
+    print_to_98("%d\n", n);
+    }
     print_to_98(10);
     return 0;
 }
