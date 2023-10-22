@@ -14,7 +14,7 @@ int main(void) {
             printf("%d", num);
         }
 
-        // Print a space if not the last number
+        
         if (num < 100) {
             printf(" ");
         }
