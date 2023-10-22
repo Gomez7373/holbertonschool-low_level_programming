@@ -1,20 +1,15 @@
 #include <stdio.h>
 
-int main(void) {
+int main() {
     for (int num = 1; num <= 100; num++) {
         if (num % 3 == 0 && num % 5 == 0) {
-            printf("FizzBuzz");
+            printf("FizzBuzz ");
         } else if (num % 3 == 0) {
-            printf("Fizz");
+            printf("Fizz ");
         } else if (num % 5 == 0) {
-            printf("Buzz");
+            printf("Buzz ");
         } else {
-            printf("%d", num);
-        }
-
-        // Print a space if not the last number
-        if (num < 100) {
-            printf(" ");
+            printf("%d ", num);
         }
     }
 
@@ -22,3 +17,4 @@ int main(void) {
 
     return 0;
 }
+
