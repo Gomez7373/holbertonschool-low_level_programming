@@ -1,5 +1,10 @@
 #include <stdio.h>
 
+/**
+ * 9-fizz_buzz - filter out the 99.5% of programming job candidates
+ *
+ * Return: Always 0 (Success)
+ */
 int main(void)
 {
 int num;
@@ -17,12 +22,14 @@ printf("Fizz");
 else if (num % 5 == 0)
 {
 printf("Buzz");
-} else
+} 
+else
 {
 printf("%d", num);
 }
 
-if (num < 100) {
+if (num < 100)
+{
 printf(" ");
 }
 }
@@ -31,4 +38,3 @@ printf("\n");
 
 return 0;
 }
-
