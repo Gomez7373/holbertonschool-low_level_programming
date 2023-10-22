@@ -1,30 +1,20 @@
 #include <stdio.h>
 
-/**
- * main - FizzBuzz program
- *
- * Return: Always 0 (Success)
- */
-int main(void)
-{
-    int num;
-    
-
-    for (num = 1; num <= 100; num++)
-    {
-        if (num % 3 == 0 && num % 5 == 0)
+int main() {
+    for (int num = 1; num <= 100; num++) {
+        if (num % 3 == 0 && num % 5 == 0) {
             printf("FizzBuzz ");
-        else if (num % 3 == 0)
+        } else if (num % 3 == 0) {
             printf("Fizz ");
-        else if (num % 5 == 0)
+        } else if (num % 5 == 0) {
             printf("Buzz ");
-        else
+        } else {
             printf("%d ", num);
-	
+        }
     }
 
     printf("\n");
 
-    return (0);
+    return 0;
 }
 
