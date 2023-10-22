@@ -1,7 +1,7 @@
 #include <stdio.h>
 
 /**
-* fizz_buzz - filter out the 99.5% of programming job candidates
+* fizz_buzz: filter out the 99.5% of programming job candidates
 *
 * Return: Always 0 (Success)
 */
