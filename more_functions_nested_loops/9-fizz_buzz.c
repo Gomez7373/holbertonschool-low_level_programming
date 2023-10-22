@@ -1,27 +1,34 @@
 #include <stdio.h>
 
-int main(void) {
-    int num;
+int main(void)
+{
+int num;
 
-    for (num = 1; num <= 100; num++) {
-        if (num % 3 == 0 && num % 5 == 0) {
-            printf("FizzBuzz");
-        } else if (num % 3 == 0) {
-            printf("Fizz");
-        } else if (num % 5 == 0) {
-            printf("Buzz");
-        } else {
-            printf("%d", num);
-        }
+for (num = 1; num <= 100; num++)
+{
+if (num % 3 == 0 && num % 5 == 0)
+{
+printf("FizzBuzz");
+}
+else if (num % 3 == 0)
+{
+printf("Fizz");
+}
+else if (num % 5 == 0)
+{
+printf("Buzz");
+} else
+{
+printf("%d", num);
+}
 
-        
-        if (num < 100) {
-            printf(" ");
-        }
-    }
+if (num < 100) {
+printf(" ");
+}
+}
 
-    printf("\n");
+printf("\n");
 
-    return 0;
+return 0;
 }
 
