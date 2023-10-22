@@ -22,7 +22,7 @@ printf("Fizz");
 else if (num % 5 == 0)
 {
 printf("Buzz");
-} 
+}
 else
 {
 printf("%d", num);
@@ -36,5 +36,5 @@ printf(" ");
 
 printf("\n");
 
-return 0;
+return (0);
 }
