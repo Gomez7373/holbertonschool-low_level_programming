@@ -1,14 +1,15 @@
 #include <stdio.h>
 
 /**
-* 9-fizz_buzz - filter out the 99.5% of programming job candidates
-*
-* int main(void) - prints the numb from 1-100.
+* fizz_buzz - filter out the 99.5% of programming job candidates
 *
 * Return: Always 0 (Success)
 */
 
 int main(void)
+/**
+ * int main(void) - prints the numb from 1-100.
+ */
 {
 int num;
 
