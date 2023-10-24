@@ -3,7 +3,7 @@
 /**
  * swap_int - function that swaps the values of two integers.
  *
- * @s: changes the value of two integers
+ * @s: changes two integers
  * @a: this is the variable swaping
  * @b: this is the variable swaping
  * return: void
