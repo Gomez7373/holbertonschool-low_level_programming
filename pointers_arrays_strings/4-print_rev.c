@@ -6,14 +6,16 @@
  * @s: the string to be printed
  */
 void print_rev(char *s)
-
+int i ;
+int length ;
 {
-    if (s == NULL)
-        return;
+ int i = 0;
+ int length = 0;
 
-    int length = 0;
-	int = i;
-  
+    if (s == NULL)
+    {
+        return;
+    }
     while (s[length] != '\0')
     {
         length++;
