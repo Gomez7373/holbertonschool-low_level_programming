@@ -21,10 +21,10 @@ void print_rev(char *s)
 
     /* Print the string in reverse */
     for (i = length - 1; i >= 0; i--) {
-        _putchar(s[i]);
+        putchar(s[i]);
     }
 
     /* Print a new line */
-    _putchar('\n');
+    putchar('\n');
 }
 
