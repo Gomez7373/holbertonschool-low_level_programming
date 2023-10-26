@@ -1,25 +1,17 @@
+// 3-puts.c
+
 #include "main.h"
 
 /**
+ * _puts - prints a string followed by a new line
+ * @str: the string to be printed
  */
 void _puts(char *str)
-
 {
-int str = 0;
-	while (str != '\0')
-{
-		_puts(str);
-		str++;
+    while (*str != '\0') {
+        _putchar(*str);
+        str++;
+    }
+    _putchar('\n');
 }
-	_puts('\n');
-}	
-
-	 int main(void);
-{
-	char string[] = "I do not fear computers. I fear the lack of them - Isaac Asimov";
-
-	_puts(string);
-
-return (0);
-	
 
