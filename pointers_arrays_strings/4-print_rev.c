@@ -5,7 +5,7 @@
  * print_rev - prints a string in reverse, followed by a new line
  * @s: the string to be printed
  */
-void print_rev(char *n)
+void print_rev(char *s)
 {
     if (s == NULL)
         return;
@@ -20,8 +20,8 @@ void print_rev(char *n)
     
     int i;
     for (i = length - 1; i >= 0; i--)
-        putchar(s[i]);
+        printf(s[i]);
 
-    putchar('\n');
+    printf('\n');
 }
 
