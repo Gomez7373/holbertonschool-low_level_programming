@@ -7,6 +7,11 @@
  */
 void print_rev(char *s)
 {
+	int s;
+	int length;
+	s = 0; 
+	length =0;
+
     if (s == NULL)
         return;
 
