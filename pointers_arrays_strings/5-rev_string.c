@@ -13,7 +13,7 @@ void rev_string(char *s)
 	while (s[c] != '\0')
 		c++;
 	c--;
-	for (g = 0; g < c; c--, g++)
+	for (g < c; c--, g++)
 	{
 	temp = s[g];
 	s[g] = s[c];
