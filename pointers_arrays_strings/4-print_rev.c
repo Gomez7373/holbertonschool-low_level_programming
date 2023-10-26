@@ -10,7 +10,7 @@ void print_rev(char *s)
     if (s == NULL)
         return;
 
-    int length; 
+    char length; 
 
     
     length = 0;
@@ -18,7 +18,7 @@ void print_rev(char *s)
         length++;
 
     
-    int i;
+    char i;
     for (i = length - 1; i >= 0; i--)
         printf(s[i]);
 
