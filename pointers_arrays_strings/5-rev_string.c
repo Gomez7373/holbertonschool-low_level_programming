@@ -1,11 +1,11 @@
 #include "main.h"
 #include <stdio.h>
-#include <string.h> 
+#include <string.h>
 /**
  *
- *rev_string - it will revers my string
+ * rev_string - it will revers my string
  *
- *@s: takes my string
+ * @s: takes my string
  */
 void rev_string(char *s)
 {
@@ -14,7 +14,6 @@ char temp;
 
 c = 0;
 g = 0;
-	
 
 while (s[c] != '\0')
 c++;
