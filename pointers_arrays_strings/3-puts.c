@@ -13,7 +13,7 @@ void _puts(char *str);
 		putchar('\n');
 		}
 	 int main(void)
-		}
+{
 	char string[] = "I do not fear computers. I fear the lack of them - Isaac Asimov";
 
 	_puts(string);
