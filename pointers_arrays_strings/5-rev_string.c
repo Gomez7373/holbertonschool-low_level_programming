@@ -2,12 +2,12 @@
 #include <stdio.h>
 #include <string.h>
 /**
- *
  * rev_string - it will revers my string
  *
  * @s: takes my string
  */
 void rev_string(char *s)
+
 {
 int g, c;
 char temp;
