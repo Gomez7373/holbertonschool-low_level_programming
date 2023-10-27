@@ -6,9 +6,9 @@ void puts2(char *str)
 {
 	int g;
 	
-	g = 0;
+	g = 2;
 
-    for (g = 0; g < 224 && str[g] != '\0'; g += 2)
+    for (str[g] != '\0'; g += 2)
     
    
     {
