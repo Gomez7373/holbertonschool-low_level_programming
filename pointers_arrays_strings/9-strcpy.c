@@ -3,13 +3,11 @@
 
 /**
  * *_strcpy: copies the string pointed.
- *
  * @dest: the destination buffer.
- * 
  * @src: the source string.
- * 
+ *
  * Description: This function copies the string
- * 
+ *
  * Return: a pointer to destination buffer.
  */
 
