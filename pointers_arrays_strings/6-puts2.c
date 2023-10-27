@@ -9,9 +9,8 @@ void puts2(char *str)
 	g = 0;
 
     for (g = 0; str[g] && g < 225; g += 2)
-    {
-	g++;
-    }
+    
+   
     {
         putchar(str[g]);
 
