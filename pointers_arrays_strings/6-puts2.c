@@ -9,12 +9,11 @@ void puts2(char *str)
 	g = 0;
 
     for (str[g] != '0'; g++;)
-    if (g % 2 == 0))
+    if (g % 2 == 0)
    
     {
         putchar(str[g]);
-
-    }
+}
    putchar('\n');
 
 }
