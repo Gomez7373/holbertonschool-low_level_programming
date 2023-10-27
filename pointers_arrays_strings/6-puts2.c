@@ -10,8 +10,10 @@ void puts2(char *str)
     for (g = 0; str[g]; g++)
     {
         putchar(str[g]);
-	g--;
+
     }
    putchar('\n');
+
+   return (0);
 }
 	
