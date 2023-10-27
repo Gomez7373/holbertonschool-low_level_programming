@@ -4,7 +4,9 @@
 
 void puts2(char *str)
 {
-    for (int g = 2; str[g] != '\0'; g += 2)
+    int g;
+
+    for (g = 2; str[g] != '\0'; g += 2)
     {
         if (g % 2 == 0)
         {
