@@ -15,7 +15,7 @@ void puts2(char *str)
 
 int main()
 {
-    char str[] = "Lorem ipsum..."; // Replace this with your input string
+    char str[] = " ";
     puts2(str);
     return 0;
 }
