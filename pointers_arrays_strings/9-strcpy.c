@@ -2,7 +2,7 @@
 #include <stdio.h>
 
 /**
- * _strcpy - Copies the string pointed.
+ *_strcpy - Copies the string pointed.
  * @dest: The destination buffer.
  * @src: The source string.
  *
@@ -10,17 +10,17 @@
  */
 char *_strcpy(char *dest, char *src)
 {
-    char *original_dest = dest;
+char *original_dest = dest;
 
-    while (*src != '\0')
-    {
-        *dest = *src;
-        dest++;
-        src++;
-    }
+while (*src != '\0')
+{
+*dest = *src;
+dest++;
+src++;
+}
 
-    *dest = '\0';
+*dest = '\0';
 
-    return original_dest;
+return original_dest;
 }
 
