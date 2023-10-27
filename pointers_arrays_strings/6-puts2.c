@@ -1,5 +1,6 @@
 #include "main.h"
-
+#include <stdio.h>
+#include <string.h>
 void puts2(char *str)
 {
 	int g;
@@ -8,8 +9,8 @@ void puts2(char *str)
 
     for (int g = 0; str[g]; g += 2)
     {
-        putchar(str[g]);
+        _putchar(str[g]);
     }
-    putchar('\n');
+   _putchar('\n');
 }
 	
