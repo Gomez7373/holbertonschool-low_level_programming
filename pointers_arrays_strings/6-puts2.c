@@ -11,10 +11,10 @@ void puts2(char *str)
 	int g;
 	int c;
 
-	while (str != '\0')
+	for (c = 0 ; *str != '\0'; c++)
 	{
 		str++;
-		c++;
+		
 	}
 
 	for (g = 0; g < c; g =+ 2)
