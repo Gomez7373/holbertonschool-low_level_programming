@@ -18,7 +18,7 @@ void puts2(char *str)
 		
 	}
 
-	for (g = 0; g < c; g =+ 2)
+	for (g = 0; g < c; g = g + 2)
 	
 	{
 		putchar(s[g]);
