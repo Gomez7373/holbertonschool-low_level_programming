@@ -11,8 +11,9 @@ void puts2(char *str)
 	int g;
 	int c;
 
-	while (str[c] != '\0')
+	while (str != '\0')
 	{
+		str++;
 		c++;
 	}
 
