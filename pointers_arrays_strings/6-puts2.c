@@ -4,17 +4,13 @@
 
 void puts2(char *str)
 {
-	int g;
-	
-	g = 0;
-
-    for (str[g] != '0'; g++;)
-    if (g % 2 == 0)
-   
+    for (int g = 2; str[g] != '\0'; g += 2)
     {
-        putchar(str[g]);
+        if (g % 2 == 0)
+        {
+            putchar(str[g]);
+        }
+    }
+    putchar('\n');
 }
-   putchar('\n');
 
-}
-	
