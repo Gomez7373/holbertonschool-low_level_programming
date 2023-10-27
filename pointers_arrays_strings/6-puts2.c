@@ -2,17 +2,19 @@
 #include <stdio.h>
 #include <string.h>
 
+/**
+ * puts2 - Prints every second character of a string.
+ * @str: The input string.
+ */
 void puts2(char *str)
 {
-    int g;
+	int g;
 
-    g = 0;
+	for (g = 0; str[g] != '\0'; g += 2)
+	{
+		putchar(str[g]);
+	}
 
-    for (; str[g] != '\0'; g += 2)
-    {
-        putchar(str[g]);
-    }
-
-    putchar('\n');
+	putchar('\n');
 }
 
