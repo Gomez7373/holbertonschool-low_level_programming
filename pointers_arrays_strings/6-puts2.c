@@ -1,10 +1,15 @@
 #include "main.h"
 
-void puts2(char *str) {
-    for (int i = 0; str[i]; i += 2)
+void puts2(char *str)
+{
+	int g;
+	
+	g = 0;
+
+    for (int g = 0; str[g]; g += 2)
     {
-        putchar(str[i]);
+        putchar(str[g]);
     }
     putchar('\n');
 }
-
+	
