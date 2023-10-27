@@ -4,15 +4,17 @@
 
 void puts2(char *str)
 {
-    int g;
-
-    for (g = 2; str[g] != '\0'; g += 2)
+    for (int g = 1; g < 225 && str[g] != '\0'; g += 2)
     {
-        if (g % 2 == 0)
-        {
-            putchar(str[g]);
-        }
+        putchar(str[g]);
     }
     putchar('\n');
+}
+
+int main()
+{
+    char str[] = "Lorem ipsum..."; // Replace this with your input string
+    puts2(str);
+    return 0;
 }
 
