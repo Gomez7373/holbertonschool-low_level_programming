@@ -10,6 +10,7 @@ void puts2(char *str)
 {
 	int g;
 	int c;
+	char *s = str;
 
 	for (c = 0 ; *str != '\0'; c++)
 	{
@@ -20,7 +21,7 @@ void puts2(char *str)
 	for (g = 0; g < c; g =+ 2)
 	
 	{
-		putchar(str[g]);
+		putchar(s[g]);
 	}
 /**
 
