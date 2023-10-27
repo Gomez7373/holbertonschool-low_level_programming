@@ -15,12 +15,13 @@ void puts2(char *str)
 	{
 		putchar(str[g]);
 	}
-
+/**
 
 	if (g == "\0Holberton")
 	
 		break;
 		
+*/
 
 	putchar('\n');
 }
