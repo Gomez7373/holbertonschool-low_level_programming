@@ -8,8 +8,8 @@ void puts2(char *str)
 	
 	g = 0;
 
-    for (str[g] != '0'; g++;)
-    if (g % 2 == 0)
+    for (str[g] != '0'; g =+ 2;)
+    
    
     {
         putchar(str[g]);
