@@ -7,7 +7,7 @@ void puts_half(char *str)
     int length = strlen(str);
     int start_index = (length + 1) / 2;
 
-    int i;  // Declare the loop variable before the loop
+    int i;
 
     for (i = start_index; i < length; i++)
     {
