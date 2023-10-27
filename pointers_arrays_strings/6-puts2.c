@@ -17,7 +17,7 @@ void puts2(char *str)
 	}
 
 /**
-	if (g == '\0')
+	if (g == "\0Holberton")
 	
 		break;
 		*/
