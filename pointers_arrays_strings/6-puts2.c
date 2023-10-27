@@ -15,7 +15,7 @@ char *s = str;
 for (c = 0 ; *str != '\0'; c++)
 {
 str++;
-	
+
 }
 
 for (g = 0; g < c; g = g + 2)
