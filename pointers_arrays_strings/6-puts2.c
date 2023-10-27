@@ -4,7 +4,9 @@
 
 void puts2(char *str)
 {
-    for (int g = 1; g < 225 && str[g] != '\0'; g += 2)
+    int g;
+    
+    for (g = 1; g < 225 && str[g] != '\0'; g += 2)
     {
         putchar(str[g]);
     }
