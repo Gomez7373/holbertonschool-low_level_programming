@@ -1,5 +1,3 @@
-/* 0-strcmp.c */
-
 #include "main.h"
 
 /**
