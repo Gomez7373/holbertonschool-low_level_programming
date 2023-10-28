@@ -44,6 +44,13 @@ int _atoi(char *s)
         s++;
     }
 
+    // Explicitly check for overflow before returning the result
+    if (result > INT_MAX || result < INT_MIN)
+    {
+        fprintf(stderr, "Error: Overflow\n");
+        return 0;  // Or any other suitable default value
+    }
+
     return (int)(result * sign);
 }
 
