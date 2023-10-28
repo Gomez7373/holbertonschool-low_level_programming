@@ -10,18 +10,21 @@
  *
  * Return: A pointer to the first occurrence of the character c in the string s,
  *         or NULL if the character is not found.
+ *
  */
+
 char *_strchr(char *s, char c)
 {
-	char *found = NULL;
+    char *found = NULL;
 
-while (*s != '\0')
-if (*s == c)
-	found = s;
-return s;
+    while (*s != '\0') {
+        if (*s == c) {
+            found = s;
+            break;
+        }
 
-s++;
-}
+        s++;
+    }
 
-return (found);
+    return found;
 }
