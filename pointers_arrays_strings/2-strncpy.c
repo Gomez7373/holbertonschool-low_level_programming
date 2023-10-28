@@ -27,5 +27,5 @@ dest++;
 n--;
 }
 
-return result;
+return (result);
 }
