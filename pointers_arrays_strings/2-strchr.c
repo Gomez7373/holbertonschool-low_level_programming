@@ -8,9 +8,12 @@ int main(void)
 
     char *result = _strchr(str, c);
 
-    if (result != NULL) {
+    if (result != NULL)
+    {
         printf("Character '%c' found at position: %ld\n", c, result - str);
-    } else {
+    }
+    else
+    {
         printf("Character '%c' not found in the string.\n", c);
     }
 
