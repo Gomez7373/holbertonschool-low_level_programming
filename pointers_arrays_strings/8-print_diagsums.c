@@ -7,7 +7,7 @@
  *
  * Description: This function calculates the sum of the two diagonals of a
  * square matrix and prints the results in the format "sum1, sum2\n".
- * The matrix is represented as a 1D array, and its size is given as a parameter.
+ * The matrix is represented as a 1D array,  size is given as a parameter.
  */
 void print_diagsums(int *a, int size)
 {
