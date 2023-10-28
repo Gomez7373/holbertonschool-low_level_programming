@@ -32,7 +32,7 @@ long long _atoi(char *str)
     while (*str >= '0' && *str <= '9')
     {
         // Check for overflow before the multiplication and addition
-        if (result > LLONG_MAX / 10 || (*str - '0') > (LLONG_MAX - result * 10))
+        if (result > (LLONG_MAX - (*str - '0')) / 10)
         {
             // Handle overflow, e.g., print an error message or set result to a default value
             // and break out of the loop.
