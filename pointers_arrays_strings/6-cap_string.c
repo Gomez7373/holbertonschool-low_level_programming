@@ -18,8 +18,8 @@ char *cap_string(char *str)
         {
             *ptr = (*ptr >= 'a' && *ptr <= 'z') ? (*ptr & ~32) : *ptr;
 
-            // Skip the rest of the word
-            while (*(ptr + 1) && ((*ptr >= 'a' && *ptr <= 'z') || (*ptr >= 'A' && *ptr <= 'Z')))
+            
+while (*(ptr + 1) && ((*ptr >= 'a' && *ptr <= 'z') || (*ptr >= 'A' && *ptr <= 'Z')))
             {
                 ptr++;
             }
