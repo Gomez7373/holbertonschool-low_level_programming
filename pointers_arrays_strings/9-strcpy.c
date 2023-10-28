@@ -3,14 +3,14 @@
 #include <limits.h>
 
 /**
- * _atoi - Converts a string to a long integer.
+ * _atoi - Converts a string to a long long integer.
  * @s: The input string.
  *
- * Return: The converted long integer.
+ * Return: The converted long long integer.
  */
 int _atoi(char *s)
 {
-    long result = 0;
+    long long result = 0;
     int sign = 1;
     int digit;
 
@@ -27,7 +27,7 @@ int _atoi(char *s)
             digit = *s - '0';
 
             // Check for overflow before the multiplication and addition
-            if (result > (LONG_MAX - digit) / 10)
+            if (result > (LLONG_MAX - digit) / 10)
             {
                 // Handle overflow, e.g., print an error message or set result to a default value
                 fprintf(stderr, "Error: Overflow\n");
