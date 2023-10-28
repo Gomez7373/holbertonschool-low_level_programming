@@ -12,18 +12,23 @@ char *cap_string(char *str)
 {
     char *ptr = str;
 
+    // Capitalize the first letter of the string
+    if (*ptr >= 'a' && *ptr <= 'z')
+        *ptr = (*ptr & ~32);
+
     while (*ptr)
     {
-        if ((*ptr >= 'a' && *ptr <= 'z') || (*ptr >= 'A' && *ptr <= 'Z'))
+        if (*ptr == ' ' || *ptr == '\t' || *ptr == '\n' ||
+            *ptr == ',' || *ptr == ';' || *ptr == '.' ||
+            *ptr == '!' || *ptr == '?' || *ptr == '\"' ||
+            *ptr == '(' || *ptr == ')' || *ptr == '{' ||
+            *ptr == '}')
         {
-            *ptr = (*ptr >= 'a' && *ptr <= 'z') ? (*ptr & ~32) : *ptr;
-
-            
-while (*(ptr + 1) && ((*ptr >= 'a' && *ptr <= 'z') || (*ptr >= 'A' && *ptr <= 'Z')))
-            {
-                ptr++;
-            }
+            // If the next character is a lowercase letter, capitalize it
+            if (*(ptr + 1) && (*(ptr + 1) >= 'a' && *(ptr + 1) <= 'z'))
+                *(ptr + 1) = (*(ptr + 1) & ~32);
         }
+
         ptr++;
     }
 
