@@ -16,15 +16,26 @@ char *cap_string(char *str)
     while (*ptr)
     {
         if ((*ptr >= 'a' && *ptr <= 'z') || (*ptr >= 'A' && *ptr <= 'Z'))
-            *ptr ^= capitalize ? 32 : 0;
-        else if ((*ptr >= ' ' && *ptr <= '/') || (*ptr >= ':' && *ptr <= '@') ||
-                 (*ptr >= '[' && *ptr <= '`') || (*ptr >= '{' && *ptr <= '}'))
-            capitalize = 1;
-        else
+        {
+            *ptr = (capitalize) ? (*ptr & ~32) : (*ptr | 32);
             capitalize = 0;
+        }
+        else if (*ptr == ' ' || *ptr == '\t' || *ptr == '\n' ||
+                 *ptr == ',' || *ptr == ';' || *ptr == '.' ||
+                 *ptr == '!' || *ptr == '?' || *ptr == '\"' ||
+                 *ptr == '(' || *ptr == ')' || *ptr == '{' ||
+                 *ptr == '}')
+        {
+            capitalize = 1;
+        }
+        else
+        {
+            capitalize = 0;
+        }
 
         ptr++;
     }
 
     return str;
 }
+
