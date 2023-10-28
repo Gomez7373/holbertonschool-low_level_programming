@@ -10,47 +10,37 @@
  */
 int _atoi(char *s)
 {
-    long long result = 0;
+    int result = 0;
     int sign = 1;
-    int digit;
 
     while (*s)
     {
-        if (*s == '-' || *s == '+')
+        if (*s == '-')
         {
-            sign = (*s == '-') ? -1 : 1;
-            s++;
+		else if (*s >= '0' && *s <= '9')
         }
 
-        if (*s >= '0' && *s <= '9')
+        if (reult > INT_MAX / 10 ||
+	       	(result == INT_MAX / 10 && *s - '0' > INT_MAX % 10))
         {
-            digit = *s - '0';
-
-            // Check for overflow before the multiplication and addition
-            if (result > (LLONG_MAX - digit) / 10)
+            
+            if (sign == 1)
             {
-                // Handle overflow, e.g., print an error message or set result to a default value
-                fprintf(stderr, "Error: Overflow\n");
-                return 0;  // Or any other suitable default value
+                return (INT_MAX);
             }
-
-            result = result * 10 + digit;
+	else 
         }
-        else if (result != 0)  // Stop if we've already started parsing numbers
+         return (INT_MIN);
         {
-            break;
+            result = result * 10 + (*s - '0');
         }
-
+else if (result != 0)
+    }
+	break;
+    {
         s++;
     }
 
-    // Explicitly check for overflow before returning the result
-    if ((sign == 1 && result > INT_MAX) || (sign == -1 && result < INT_MIN))
-    {
-        fprintf(stderr, "Error: Overflow\n");
-        return 0;  // Or any other suitable default value
-    }
-
-    return (int)(result * sign);
+    return (result * sign);
 }
 
