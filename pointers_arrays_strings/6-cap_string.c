@@ -1,4 +1,4 @@
-/* 0-cap_string.c */
+/* cap_string.c */
 
 #include "main.h"
 
@@ -17,7 +17,7 @@ char *cap_string(char *str)
     {
         if ((*ptr >= 'a' && *ptr <= 'z') || (*ptr >= 'A' && *ptr <= 'Z'))
         {
-            *ptr = (capitalize) ? (*ptr & ~32) : (*ptr | 32);
+            *ptr = (*ptr >= 'a' && *ptr <= 'z') ? (*ptr & ~32) : *ptr;
             capitalize = 0;
         }
         else if (*ptr == ' ' || *ptr == '\t' || *ptr == '\n' ||
