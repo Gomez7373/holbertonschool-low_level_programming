@@ -25,5 +25,5 @@ break;
 s++;
 }
 
-return found;
+return (found);
 }
