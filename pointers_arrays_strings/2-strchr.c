@@ -12,18 +12,18 @@
 
 char *_strchr(char *s, char c)
 {
-    char *found = NULL;
+char *found = NULL;
 
-    while (*s != '\0')
-    {
-        if (*s == c)
-        {
-            found = s;
-            break;
-        }
+while (*s != '\0')
+{
+if (*s == c)
+{
+found = s;
+break;
+}
 
-        s++;
-    }
+s++;
+}
 
-    return found;
+return found;
 }
