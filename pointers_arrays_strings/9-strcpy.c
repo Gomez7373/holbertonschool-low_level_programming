@@ -1,49 +1,46 @@
 #include "main.h"
-#include <stdio.h>
-#include <limits.h>
 
 /**
- * _atoi - Converts a string to a long long integer.
- * @str: The input string.
+ * _atoi - Converts a string to an integer.
+ * @s: The input string.
  *
- * Description: This function converts the initial portion of the string pointed
- * to by str to its equivalent long long integer representation.
- *
- * Return: The converted long long integer.
+ * Return: The converted integer.
  */
-
-long long _atoi(char *str)
+int _atoi(char *s)
 {
-    long long result = 0;
+    int result = 0;
     int sign = 1;
+    int digit;
 
-    // Skip leading whitespaces
-    while (*str == ' ')
-        str++;
-
-    // Handle sign
-    if (*str == '-' || *str == '+')
+    while (*s)
     {
-        sign = (*str == '-') ? -1 : 1;
-        str++;
-    }
-
-    // Convert digits to long long integer
-    while (*str >= '0' && *str <= '9')
-    {
-        // Check for overflow before the multiplication and addition
-        if (result > (LLONG_MAX - (*str - '0')) / 10)
+        if (*s == '-' || *s == '+')
         {
-            // Handle overflow, e.g., print an error message or set result to a default value
-            // and break out of the loop.
+            sign = (*s == '-') ? -1 : 1;
+            s++;
+        }
+
+        if (*s >= '0' && *s <= '9')
+        {
+            digit = *s - '0';
+
+            // Check for overflow before the multiplication and addition
+            if (result > (INT_MAX - digit) / 10)
+            {
+                // Handle overflow, e.g., print an error message or set result to a default value
+                break;
+            }
+
+            result = result * 10 + digit;
+        }
+        else if (result != 0)  // Stop if we've already started parsing numbers
+        {
             break;
         }
 
-        result = result * 10 + (*str - '0');
-        str++;
+        s++;
     }
 
-    // Multiply by sign to include the sign
     return result * sign;
 }
 
