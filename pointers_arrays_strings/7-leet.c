@@ -14,7 +14,7 @@ char *leet(char *str)
             if (*ptr == letters[i] || *ptr == letters[i] + ('a' - 'A'))
             {
                 *ptr = leetMap[i];
-                break; // Exit the loop once a replacement is made
+                break;
             }
         }
         ptr++;
