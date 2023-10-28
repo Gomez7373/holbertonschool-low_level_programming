@@ -1,5 +1,3 @@
-/* 6-cap_string.c */
-
 #include "main.h"
 
 /**
@@ -8,23 +6,29 @@
  *
  * Return: A pointer to the resulting string.
  */
-char *cap_string(char *str)
+char *cap_string(char *)
 {
     char *ptr = str;
+    int capitalize = 1;  /* Flag to indicate whether the next character should be capitalized */
 
-    while (*ptr)
+    while (*ptr != '\0')
     {
-        if ((*ptr >= 'a' && *ptr <= 'z') || (*ptr >= 'A' && *ptr <= 'Z'))
+        if (*ptr == ' ' || *ptr == '\t' || *ptr == '\n' ||
+            *ptr == ',' || *ptr == ';' || *ptr == '.' ||
+            *ptr == '!' || *ptr == '?' || *ptr == '\"' ||
+            *ptr == '(' || *ptr == ')' || *ptr == '{' ||
+            *ptr == '}')
         {
-            *ptr = (*ptr >= 'a' && *ptr <= 'z') ? (*ptr & ~32) : *ptr;
-            while (*(ptr + 1) && ((*ptr >= 'a' && *ptr <= 'z') || (*ptr >= 'A' && *ptr <= 'Z')))
-            {
-                ptr++;
-            }
+            capitalize = 1;
         }
+        else if (*ptr >= 'a' && *ptr <= 'z' && capitalize)
+        {
+            *ptr = (char)(*ptr - 'a' + 'A');
+            capitalize = 0;
+        }
+
         ptr++;
     }
 
-    return str;
+    return (str);
 }
-
