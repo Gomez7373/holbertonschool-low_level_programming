@@ -12,15 +12,16 @@
  *         or NULL if the character is not found.
  */
 char *_strchr(char *s, char c)
+{
+	char *found = NULL;
 
-{
 while (*s != '\0')
-{
 if (*s == c)
+	found = s;
 return s;
 
 s++;
 }
 
-return (NULL);
+return (found);
 }
