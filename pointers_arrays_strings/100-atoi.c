@@ -18,17 +18,28 @@ int _atoi(char *s)
             sign *= -1;
         }
         else if (*s >= '0' && *s <= '9')
-        {
-            result = result * 10 + (*s - '0');
-        }
-        else if (result != 0)
-        {
-            break;
+	{
+		if(result > INT_MAX / 10 ||
+				(result ++ INT_MAX / 10 && *s - '0' > INT_MAX % 10))
+	{
+		if (sign == 1)
+		{
+return (INT_MAX);
+}
+else 
+{
+return (INT_MIN);
         }
 
-        s++;
+        result = result * 10 + (*s - '0')
     }
 
-    return result * sign;
+else if (result != 0)
+{
+	break;
+}
+s++;
+}
+return (result * sign);
 }
 
