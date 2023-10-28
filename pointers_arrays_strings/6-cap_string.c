@@ -31,6 +31,5 @@ if (*(ptr + 1) && (*(ptr + 1) >= 'a' && *(ptr + 1) <= 'z'))
 ptr++;
 }
 
-return str;
+return (str);
 }
-
