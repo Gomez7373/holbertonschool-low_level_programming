@@ -1,14 +1,16 @@
 #include "main.h"
+#include <stdio.h>
+#include <limits.h>
 
 /**
- * _atoi - Converts a string to an integer.
+ * _atoi - Converts a string to a long integer.
  * @s: The input string.
  *
- * Return: The converted integer.
+ * Return: The converted long integer.
  */
 int _atoi(char *s)
 {
-    int result = 0;
+    long result = 0;
     int sign = 1;
     int digit;
 
@@ -25,10 +27,11 @@ int _atoi(char *s)
             digit = *s - '0';
 
             // Check for overflow before the multiplication and addition
-            if (result > (INT_MAX - digit) / 10)
+            if (result > (LONG_MAX - digit) / 10)
             {
                 // Handle overflow, e.g., print an error message or set result to a default value
-                break;
+                fprintf(stderr, "Error: Overflow\n");
+                return 0;  // Or any other suitable default value
             }
 
             result = result * 10 + digit;
@@ -41,6 +44,6 @@ int _atoi(char *s)
         s++;
     }
 
-    return result * sign;
+    return (int)(result * sign);
 }
 
