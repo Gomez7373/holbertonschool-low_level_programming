@@ -8,29 +8,27 @@
  *
  * Return: A pointer to the resulting string.
  */
-char *cap_string(char *)
+char *cap_string(char *str)
 {
     char *ptr = str;
-    int capitalize = 1;  /* Flag to indicate whether the next character should be capitalized */
+    int capitalize = 1;
 
-    while (*ptr != '\0')
+    while (*ptr)
     {
-        if (*ptr == ' ' || *ptr == '\t' || *ptr == '\n' ||
-            *ptr == ',' || *ptr == ';' || *ptr == '.' ||
-            *ptr == '!' || *ptr == '?' || *ptr == '\"' ||
-            *ptr == '(' || *ptr == ')' || *ptr == '{' ||
-            *ptr == '}')
+        if ((*ptr >= 'a' && *ptr <= 'z') || (*ptr >= 'A' && *ptr <= 'Z'))
+        {
+            *ptr = (capitalize) ? (*ptr & ~32) : (*ptr | 32);
+            capitalize = 0;
+        }
+        else if (*ptr == ' ' || (*ptr >= '\t' && *ptr <= '\n') ||
+                 *ptr == ',' || *ptr == ';' || *ptr == '.' ||
+                 *ptr == '!' || *ptr == '?' || *ptr == '\"' ||
+                 (*ptr >= '(' && *ptr <= '}'))
         {
             capitalize = 1;
         }
-        else if (*ptr >= 'a' && *ptr <= 'z' && capitalize)
-        {
-            *ptr = (char)(*ptr - 'a' + 'A');
-            capitalize = 0;
-        }
-
         ptr++;
     }
 
-    return (str);
+    return str;
 }
