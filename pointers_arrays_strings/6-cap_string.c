@@ -1,4 +1,4 @@
-/* cap_string.c */
+/* 6-cap_string.c */
 
 #include "main.h"
 
@@ -11,28 +11,17 @@
 char *cap_string(char *str)
 {
     char *ptr = str;
-    int capitalize = 1;
 
     while (*ptr)
     {
         if ((*ptr >= 'a' && *ptr <= 'z') || (*ptr >= 'A' && *ptr <= 'Z'))
         {
             *ptr = (*ptr >= 'a' && *ptr <= 'z') ? (*ptr & ~32) : *ptr;
-            capitalize = 0;
+            while (*(ptr + 1) && ((*ptr >= 'a' && *ptr <= 'z') || (*ptr >= 'A' && *ptr <= 'Z')))
+            {
+                ptr++;
+            }
         }
-        else if (*ptr == ' ' || *ptr == '\t' || *ptr == '\n' ||
-                 *ptr == ',' || *ptr == ';' || *ptr == '.' ||
-                 *ptr == '!' || *ptr == '?' || *ptr == '\"' ||
-                 *ptr == '(' || *ptr == ')' || *ptr == '{' ||
-                 *ptr == '}')
-        {
-            capitalize = 1;
-        }
-        else
-        {
-            capitalize = 0;
-        }
-
         ptr++;
     }
 
