@@ -10,27 +10,27 @@
  */
 char *cap_string(char *str)
 {
-    char *ptr = str;
+char *ptr = str;
 
-    if (*ptr >= 'a' && *ptr <= 'z')
-        *ptr = (*ptr & ~32);
+if (*ptr >= 'a' && *ptr <= 'z')
+*ptr = (*ptr & ~32);
 
-    while (*ptr)
-    {
-        if (*ptr == ' ' || *ptr == '\t' || *ptr == '\n' ||
-            *ptr == ',' || *ptr == ';' || *ptr == '.' ||
-            *ptr == '!' || *ptr == '?' || *ptr == '\"' ||
-            *ptr == '(' || *ptr == ')' || *ptr == '{' ||
-            *ptr == '}')
-        {
-           
-            if (*(ptr + 1) && (*(ptr + 1) >= 'a' && *(ptr + 1) <= 'z'))
-                *(ptr + 1) = (*(ptr + 1) & ~32);
-        }
+while (*ptr)
+{
+if (*ptr == ' ' || *ptr == '\t' || *ptr == '\n' ||
+*ptr == ',' || *ptr == ';' || *ptr == '.' ||
+*ptr == '!' || *ptr == '?' || *ptr == '\"' ||
+*ptr == '(' || *ptr == ')' || *ptr == '{' ||
+*ptr == '}')
+{
 
-        ptr++;
-    }
+if (*(ptr + 1) && (*(ptr + 1) >= 'a' && *(ptr + 1) <= 'z'))
+*(ptr + 1) = (*(ptr + 1) & ~32);
+}
 
-    return str;
+ptr++;
+}
+
+return str;
 }
 
