@@ -8,7 +8,7 @@ int main(void)
     char *f;
 
     f = _strchr(s, '\0');
-    printf("%s\n", (f == NULL ? "nil" : f));
+    printf("%s\n", (f == NULL ? " " : f));
     return (0);
 }
 
