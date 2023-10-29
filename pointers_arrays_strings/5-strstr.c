@@ -24,7 +24,7 @@ pattern++;
 }
 
 if (!*pattern)
-return start;
+return (start);
 
 haystack = start + 1;
 }
