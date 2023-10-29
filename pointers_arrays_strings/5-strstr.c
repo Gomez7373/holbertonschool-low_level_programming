@@ -10,25 +10,25 @@
  */
 char *_strstr(char *haystack, char *needle)
 {
-    char *start, *pattern;
+char *start, *pattern;
 
-    while (*haystack)
-    {
-        start = haystack;
-        pattern = needle;
+while (*haystack)
+{
+start = haystack;
+pattern = needle;
 
-        while (*haystack && *pattern && *haystack == *pattern)
-        {
-            haystack++;
-            pattern++;
-        }
+while (*haystack && *pattern && *haystack == *pattern)
+{
+haystack++;
+pattern++;
+}
 
-        if (!*pattern)
-            return start;
+if (!*pattern)
+return start;
 
-        haystack = start + 1;
-    }
+haystack = start + 1;
+}
 
-    return NULL;
+return (NULL);
 }
 
