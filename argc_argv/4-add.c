@@ -5,12 +5,12 @@
 * main - entrery point
 * @argc: argument count
 * @argv: argument vector
-* return: 0 (Success) or 1 if there is an error.
+* Return: 0 (Success) or 1 if there is an error.
 */
 int main(int argc, char *argv[])
 {
 int total = 0;
-int num; 
+int num;
 int len;
 int i;
 char *arg;
