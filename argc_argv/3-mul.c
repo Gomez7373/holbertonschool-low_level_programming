@@ -36,7 +36,7 @@ printf("Error: Invalid input. Please provide two valid integers.\n");
 
 return (1);
 }
-result = num1 *  num2;
+result = num1 * num2;
 
 printf("%d\n", result);
 
