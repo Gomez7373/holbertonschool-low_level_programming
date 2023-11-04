@@ -2,6 +2,7 @@
 #include "main.h"
 
 int factorial(int n)
+	int i;
 {
 if (n < 0)
 {
@@ -14,7 +15,7 @@ return 1;
 else
 {
 int result = 1;
-for (int i = 2; i <= n; i++)
+for (i = 2; i <= n; i++)
 {
 result *= i;
 }
