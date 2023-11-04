@@ -5,14 +5,16 @@
  * @argv: argument value
  * Return: Always 0
  */
-int main (int argc, char *argv[])
-{
-	int i;
 
-printf("%d\n", argc -1);
-for (i = 1; i < argc; i++);
+int main(int argc, char *argv[])
 {
-printf("argument %d: %s\n", i, argv[i];
+int i;
+
+printf("Number of arguments: %d\n", argc - 1);
+
+for (i = 1; i < argc; i++)
+{
+printf("Argument %d: %s\n", i, argv[i]);
 }
-return (0);
+return 0;
 }
