@@ -15,7 +15,11 @@ argc = 1;
 printf("%d\n", argc - 1);
 }
 
-for (argc = 1; argc < 3; argc++);
+if (argc < 3);
+
+{
+	printf("%d\n", argc + 1);
+}
 
  
 return (0);
