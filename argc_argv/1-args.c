@@ -21,7 +21,7 @@ int main(void)
 	if (i < 2)
 	{
 		printf("%i\n", i++);
-	
+	}	
 		else
         
            break;
