@@ -17,7 +17,8 @@ count = 0;
 printf("%d\n", argc);
 }
 
-for (count = 0; count < 2; argc++)
+for (count = 0; count == 0; argc++)
+ break;
 
 {
 	printf("%d\n", argc + 1);
