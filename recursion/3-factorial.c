@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include "main.h"
 
-int factorial(int n);
+int factorial(int n)
 
 int main() {
     printf("Factorial of 5 is: %d\n", factorial(5));
