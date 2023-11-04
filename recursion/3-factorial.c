@@ -3,7 +3,8 @@
 
 int factorial(int n)
 
-int main() {
+int main()
+{
     printf("Factorial of 5 is: %d\n", factorial(5));
     
     if (factorial(-3) == -1) 
