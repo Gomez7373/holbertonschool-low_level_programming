@@ -1,25 +1,38 @@
 #include <stdio.h>
+#include "main.h"
 
-/**
- * main - Entry point
- * Return: Always 0 (Success)
- */
+int factorial(int n)
+{
+if (n < 0)
+{
+return -1;
+}
+else if (n == 0 || n == 1)
+{
+return 1;
+}
+else
+{
+int result = 1;
+for (int i = 2; i <= n; i++)
+{
+result *= i;
+}
+return result;
+}
+}
+
 int main(void)
 {
-int result;
 
-result = 1;
+int result = factorial(5);
+printf("Factorial of 5: %d\n", result);
 
+result = factorial(0);
 printf("Factorial of 0: %d\n", result);
 
-result = 1;
-
-printf("Factorial of 1: %d\n", result);
-
-result = 2;
-
-printf("Factorial of 2: %d\n", result);
+result = factorial(-3);
+printf("Factorial of -3: %d\n", result);
 
 return 0;
 }
-
