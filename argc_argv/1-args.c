@@ -8,7 +8,6 @@
 
 int main(int argc)
 {
-int i;
 
 printf("%d\n", argc - 1);
 
