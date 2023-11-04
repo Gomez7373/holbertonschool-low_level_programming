@@ -2,9 +2,10 @@
 #include "main.h"
 
 int factorial(int n)
-int i;
-i = 0;
+
+
 {
+	int i = 0;
 if (n < 0)
 {
 return -1;
