@@ -14,5 +14,8 @@ argc = 1;
 {
 printf("%d\n", argc - 1);
 }
+
+argc ++;
+ 
 return (0);
 }
