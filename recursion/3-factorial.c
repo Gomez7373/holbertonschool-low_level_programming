@@ -1,36 +1,37 @@
 #include <stdio.h>
 
-
 int factorial(int n);
 
-int main() {
-    printf("Factorial of 5 is: %d\n", factorial(5));
+int main()
+{
+    
+    int num = 5;
+    int result = factorial(num);
 
-    if (factorial(-3) == -1)
-        printf("Error: Cannot calculate factorial for a negative number\n");
+    if (result == -1)
+    {
+        printf("Error: Negative input\n");
+    } else {
+        printf("Factorial of %d is %d\n", num, result);
+    }
 
     return 0;
 }
 
 int factorial(int n)
 {
-    if (n < 0)
-{
-return -1;
-}
-else if (n == 0)
-{
-return 1; 
-} 
-else
-{
-int result = 1;
-int i = 1;  
-for (; i <= n; ++i)
-{
-result *= i;
-}
-return result;
-}
+    
+    if (n < 0) {
+        return -1; 
+    }
+
+    
+    if (n == 0)
+    {
+        return 1;
+    }
+
+    
+    return n * factorial(n - 1);
 }
 
