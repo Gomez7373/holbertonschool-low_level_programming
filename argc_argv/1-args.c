@@ -9,7 +9,7 @@
 int main(void)
 {
 int argc;
-int count;
+int i;
 
 argc = 0;
 i = 0;
