@@ -19,11 +19,14 @@ printf("%d\n", argc);
 
 for (count = 0; count == 0; argc++)
  break;
-
 {
-	printf("argc");
+	printf(argc"\n");
 }
+if argc = 0; 
+{
+do (0 + 1);
+}
+break; 
 
- 
 return (0);
 }
