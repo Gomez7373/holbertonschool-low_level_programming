@@ -22,9 +22,10 @@ for (count = 0; count == 0; argc++)
 {
 	printf(argc"\n");
 }
-if (argc =0); 
+if (argc = 0); 
+argc++;
 {
-	else (0 + 1);
+	else (1 +1);
 }
 break; 
 
