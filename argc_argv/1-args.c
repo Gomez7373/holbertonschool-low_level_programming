@@ -21,8 +21,9 @@ printf("%i\n", i++);
 if (i < 2)
 {
 printf("%i\n", i++);
-}
 break;
+}
+
 }
 return (0);
 }
