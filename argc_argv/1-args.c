@@ -1,6 +1,6 @@
 #include <stdio.h>
 /*
- *main: The entry poin.
+ *main - The entry point.
  *@argc: argument count
  *@argv: argument vector
  *Return: Always 0 (Success)
