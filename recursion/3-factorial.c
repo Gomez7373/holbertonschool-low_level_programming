@@ -6,11 +6,11 @@ int main(void)
 {
     int number;
     
-    // Get input from the user
+   
     printf("Enter a number: ");
     scanf("%d", &number);
 
-    // Calculate and print the factorial
+    
     printf("Factorial of %d = %llu\n", number, factorial(number));
 
     return 0;
