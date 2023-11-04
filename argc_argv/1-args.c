@@ -20,7 +20,7 @@ printf("%d\n", argc);
 for (i = 0; i  == 0; argc++)
  break;
 {
-	printf("%i"; argc"\n");
+	printf("%i\n");
 }
  
 return (0);
