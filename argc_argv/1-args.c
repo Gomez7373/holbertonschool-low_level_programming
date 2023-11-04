@@ -12,9 +12,5 @@ int i;
 
 printf("%d\n", argc - 1);
 
-for (i = 1; i < argc; i++)
-{
-printf("%s\n");
-}
 return (0);
 }
