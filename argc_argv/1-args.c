@@ -22,6 +22,18 @@ int main(void)
             break;
         }
     }
+for (i = 1; i == 1; argc++)
+{
+	if (i < 2)
+	{
+	printf("%i\n",i);
+	i++
+	}
+	else
+	{
+	break;
+	}
+}
 
     return 0;
 }
