@@ -1,28 +1,15 @@
 #include <stdio.h>
-
-/**
- * main - entry point
- * Return: Always 0
+/*
+ * main  - entry poin 
+ * @argc: argument count
+ * @argv: argument vector
+ * Return: Always 0 (Success)
  */
 
-int main(void)
+int main(int argc, charv[])
 {
-int argc = 0;
-int i;
+	(void) argv;
+	printf("%d\n", argc -1 );
 
-for (i = 0; i <= 2; argc++)
-printf("%i\n", i);
-{
-if (i < 1)
-{
-printf("%i\n", i++);
-}
-
-if (i < 2)
-{
-printf("%i\n", i++);
-}
-
-}
-return (0);
+	return (0);
 }
