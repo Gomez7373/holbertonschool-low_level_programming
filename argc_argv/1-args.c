@@ -1,7 +1,7 @@
 #include <stdio.h>
 /**
- * main - entry poin 
- * @argc: argument count 
+ * main - entry poin
+ * @argc: argument count
  * @argv: argument value
  * Return: Always 0
  */
@@ -16,5 +16,5 @@ for (i = 1; i < argc; i++)
 {
 printf("Argument %d: %s\n", i, argv[i]);
 }
-return 0;
+return (0);
 }
