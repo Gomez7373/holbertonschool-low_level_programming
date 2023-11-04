@@ -1,33 +1,26 @@
 #include <stdio.h>
 
-int factorial(int n);
+unsigned long long factorial(int n);
 
-int main() {
-   
-    int num = 5;
-    int result = factorial(num);
+int main(void)
+{
+    int number;
+    
+    // Get input from the user
+    printf("Enter a number: ");
+    scanf("%d", &number);
 
-    if (result == -1) {
-        printf("Error: Negative input\n");
-    } else {
-        printf("Factorial of %d is %d\n", num, result);
-    }
+    // Calculate and print the factorial
+    printf("Factorial of %d = %llu\n", number, factorial(number));
 
     return 0;
 }
 
-int factorial(int n) {
-    
-    if (n < 0) {
-        return -1; 
-    }
-
-   
-    if (n == 0) {
+unsigned long long factorial(int n)
+{
+    if (n == 0 || n == 1)
         return 1;
-    }
-
-   
-    return n * factorial(n - 1);
+    else
+        return n * factorial(n - 1);
 }
 
