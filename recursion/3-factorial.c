@@ -12,18 +12,25 @@ int main() {
     return 0;
 }
 
-int factorial(int n) {
-    if (n < 0) {
-        return -1;
-    } else if (n == 0) {
-        return 1; 
-    } else {
-        int result = 1;
-        int i = 1;  p
-        for (; i <= n; ++i) {
-            result *= i;
-        }
-        return result;
-    }
+int factorial(int n)
+{
+    if (n < 0)
+{
+return -1;
+}
+else if (n == 0)
+{
+return 1; 
+} 
+else
+{
+int result = 1;
+int i = 1;  
+for (; i <= n; ++i)
+{
+result *= i;
+}
+return result;
+}
 }
 
