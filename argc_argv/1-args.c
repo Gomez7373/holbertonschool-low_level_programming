@@ -21,7 +21,7 @@ for (count = 0; count == 0; argc++)
  break;
 
 {
-	printf('%i\n');
+	printf("argc");
 }
 
  
