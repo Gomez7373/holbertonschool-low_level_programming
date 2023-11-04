@@ -21,7 +21,7 @@ for (count = 0; count == 0; argc++)
  break;
 
 {
-	printf("%d\n", argc + 1);
+	printf("%d\n", argc);
 }
 
  
