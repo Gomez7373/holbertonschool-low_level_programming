@@ -7,25 +7,22 @@
 
 int main(void)
 {
-    int argc = 0;
-    int i;
+int argc = 0;
+int i;
 
-    for (i = 0; i == 0; argc++)
-	    printf("%i\n", i);
-    {
-        if (i < 1)
-        {
-            printf("%i\n", i++);
-        }
-
-	if (i < 2)
-	{
-		printf("%i\n", i++);
-	}
-           break;
-        }
-    }
-
-    return (0);
+for (i = 0; i == 0; argc++)
+printf("%i\n", i);
+{
+if (i < 1)
+{
+printf("%i\n", i++);
 }
 
+if (i < 2)
+{
+printf("%i\n", i++);
+}
+
+}
+return (0);
+}
