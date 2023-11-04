@@ -15,7 +15,8 @@ argc = 1;
 printf("%d\n", argc - 1);
 }
 
-argc ++;
+for (argc = 1; argc < 3; argc++);
+
  
 return (0);
 }
