@@ -3,7 +3,7 @@
 int factorial(int n);
 
 int main() {
-    // Example usage:
+   
     int num = 5;
     int result = factorial(num);
 
@@ -17,17 +17,17 @@ int main() {
 }
 
 int factorial(int n) {
-    // Check for negative input
+    
     if (n < 0) {
-        return -1; // Error: Negative input
+        return -1; 
     }
 
-    // Base case: Factorial of 0 is 1
+   
     if (n == 0) {
         return 1;
     }
 
-    // Recursive case: n! = n * (n-1)!
+   
     return n * factorial(n - 1);
 }
 
