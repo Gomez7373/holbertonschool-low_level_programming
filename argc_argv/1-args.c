@@ -11,7 +11,7 @@ int main(void)
     int i;
 
     for (i = 0; i == 0; argc++)
-	    printf("%i\n", i)
+	    printf("%i\n", i);
     {
         if (i < 1)
         {
