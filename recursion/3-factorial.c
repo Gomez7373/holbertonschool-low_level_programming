@@ -2,8 +2,8 @@
 #include "main.h"
 
 int factorial(int n)
-	int i;
-{
+int i;
+i = 0;{
 if (n < 0)
 {
 return -1;
