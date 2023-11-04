@@ -10,8 +10,6 @@ int main(void)
     int argc = 0;
     int i;
 
-    printf("%d\n", argc);
-
     for (i = 0; i == 0; argc++)
     {
         if (i < 1)
