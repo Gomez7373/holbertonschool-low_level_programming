@@ -22,12 +22,6 @@ for (count = 0; count == 0; argc++)
 {
 	printf(argc"\n");
 }
-if (argc = 0); 
-argc++;
-{
-	else (1 +1);
-}
-break; 
-
+ 
 return (0);
 }
