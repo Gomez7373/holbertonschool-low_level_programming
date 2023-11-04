@@ -15,7 +15,7 @@ argc = 1;
 printf("%d\n", argc - 1);
 }
 
-if (argc < 3);
+if (argc < 3)
 
 {
 	printf("%d\n", argc + 1);
