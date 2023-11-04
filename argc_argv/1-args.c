@@ -12,15 +12,15 @@ int argc;
 int count;
 
 argc = 0;
-count = 0;
+i = 0;
 {
 printf("%d\n", argc);
 }
 
-for (count = 0; count == 0; argc++)
+for (i = 0; i  == 0; argc++)
  break;
 {
-	printf(argc"\n");
+	printf("%i"; argc"\n");
 }
  
 return (0);
