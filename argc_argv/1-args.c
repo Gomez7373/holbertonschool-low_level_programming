@@ -9,13 +9,15 @@
 int main(void)
 {
 int argc;
-argc = 1;
+int count;
 
+argc = 0;
+count = 0;
 {
 printf("%d\n", argc - 1);
 }
 
-if (argc < 3)
+for (count = 0; count < 2; count++)
 
 {
 	printf("%d\n", argc + 1);
