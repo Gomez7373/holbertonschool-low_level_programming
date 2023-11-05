@@ -1,10 +1,10 @@
 #include "main.h"
 /**
- *
+ * _sqrt_recursion - this will 
  */
 
 
-int _sqrt_recursion(int n, int i)
+int _sqrt_recursion_helper(int n, int i)
 {
 int result;
 
@@ -18,7 +18,7 @@ if (i * i == n)
 return (i);
 }
 
-result = _sqrt_recursion(n, i + 1);
+result = _sqrt_recursion_helper(n, i + 1);
 return (result);
 }
 
@@ -29,7 +29,7 @@ if (n < 0)
 {
 return (-1);
 }
-result = _sqrt_recursion(n, 1);
+result = _sqrt_recursion_helper(n, 1);
 
 return (result);  
 }
