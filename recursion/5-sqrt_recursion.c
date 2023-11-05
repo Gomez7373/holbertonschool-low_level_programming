@@ -11,7 +11,7 @@ int _sqrt_recursion(int n)
 {
 int number;
 int  i;
-
+here:
 number = 25;
 if (n < 0)
 {
@@ -39,7 +39,7 @@ return (-1);
 }
 
 printf("The square root of %d is %d\n", _sqrt_recursion(number));
-
+goto here;
 return (0);
 }
 
