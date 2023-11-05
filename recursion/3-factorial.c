@@ -1,9 +1,12 @@
 #include <stdio.h>
-/*
-* factorial - Calculates the factorial of a number.
-* @n: The number  fot which factorial calculated.
-* Return: -1 mfor negative input.
-*/
+/**
+ * factorial - Calculate the factorial of a number.
+ * @n: The number for which factorial is calculated.
+ *
+ * Return: The factorial of the given number.
+ *         Returns -1 for negative input.
+ */
+
 int factorial(int n)
 {
 if (n < 0)
