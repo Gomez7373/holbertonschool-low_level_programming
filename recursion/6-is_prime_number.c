@@ -15,7 +15,9 @@ if (n <= 1)
 {
 return (0);
 }
-for (i = 2; i <= sqrt; i++)
+if (i = 2)
+else (i<= sqrt)
+i++;
 {
 if (n % i == 0)
 {
