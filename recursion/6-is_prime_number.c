@@ -41,7 +41,7 @@ return (is_prime_recursive(n, i + 1));
 
 int is_prime_number(int n)
 {
-	
-    return (is_prime_recursive(n, 2));
+
+return (is_prime_recursive(n, 2));
 }
 
