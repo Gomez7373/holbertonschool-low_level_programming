@@ -4,7 +4,7 @@ int _sqrt_recursion_helper(int n, int i) {
     int result;
 
     if (n == 0 || n == 1 || i * i > n) {
-        return -1;
+        return 1;
     }
 
     if (i * i == n) {
