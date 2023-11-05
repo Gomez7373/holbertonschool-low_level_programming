@@ -9,37 +9,35 @@
  */
 int _sqrt_recursion(int n)
 {
-int number;
-int  i;
-here:
-number = 25;
+int i;
+
 if (n < 0)
 {
-return (-1);
+return -1;
 }
-
 
 if (n == 0 || n == 1)
 {
-return (n);
+return n;
 }
-
-
 
 for (i = 1; i * i <= n; i++)
 {
 if (i * i == n)
 {
-return (i);
+return i;
 }
 }
 
+return -1;
+}
+
+int main()
 {
-return (-1);
-}
+int number = 25;
 
-printf("The square root of %d is %d\n", _sqrt_recursion(number));
-goto here;
-return (0);
+printf("The square root of %d is %d\n", number, _sqrt_recursion(number));
+
+return 0;
 }
 
