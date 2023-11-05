@@ -1,14 +1,13 @@
 #include "main.h"
+
 /**
- *_squr_recursion - This code will be calculation square root.
- *_squr_recursion_helper - Recursive function to calculate the square root.
- *@n: The number to calculate the square root of.
- *@i: The current gues for the square root.
- *Return: The square root of n, or 1 if n is 0 or 1,
- *or -1 if n is negative.
+ * _sqrt_recursion_helper - Recursively calculate the square root
+ * @n: The number to calculate the square root of
+ * @i: The current guess for the square root
+ *
+ * Return: The square root of n, or 1 if n is 0 or 1,
+ * or -1 if n is negative.
  */
-
-
 int _sqrt_recursion_helper(int n, int i)
 {
 int result;
@@ -26,7 +25,12 @@ return (i);
 result = _sqrt_recursion_helper(n, i + 1);
 return (result);
 }
-
+/**
+ * _sqrt_recursion - Calculate the square root of a number using recursion
+ * @n: The number to calculate the square root of
+ *
+ * Return: The square root of n, or -1 if n is negative.
+ */
 int _sqrt_recursion(int n)
 {
 int result;
