@@ -10,7 +10,6 @@
 int _sqrt_recursion(int n)
 {
 
-int number = 25;
 int i;
 if (n < 0)
 {
@@ -37,7 +36,7 @@ return (i);
 return (-1);
 }
 
-printf("The square root of %d is %d\n", number, _sqrt_recursion(number));
+printf("The square root of %d is %d\n", _sqrt_recursion(number));
 
 return (0);
 }
