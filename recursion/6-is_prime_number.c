@@ -15,7 +15,7 @@ if (n <= 1)
 return (0);
 }
 
-if (i > sqrt(n))
+if (i > sqrt)
 {
 return (1); 
 }
