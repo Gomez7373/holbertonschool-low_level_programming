@@ -1,6 +1,6 @@
 #include <stdio.h>
 /*
-* factorial - calculate the factorial of a number.
+* calculate the factorial of a number.
 * @n: The number  fot which factorial calculated.
 * Return: -1 mfor negative input.
 */
@@ -11,6 +11,6 @@ return (-1);
 else if  (n == 0)
 return (1);
 else
-return n * factorial(n - 1);
+return (n * factorial(n - 1));
 }
 
