@@ -18,7 +18,7 @@ int is_prime_recursive(int n, int i)
     }
 
     if (n % i == 0) {
-        return 0;r
+        return 0;
     }
 
     return is_prime_recursive(n, i + 1);
