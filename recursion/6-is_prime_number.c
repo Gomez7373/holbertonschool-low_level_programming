@@ -10,15 +10,15 @@
 int is_prime_recursive(int n, int i)
 {
     if (n <= 1) {
-        return 0; // 0 and 1 are not prime numbers
+        return 0;
     }
 
     if (i > sqrt(n)) {
-        return 1; // n is prime, no divisors found
+        return 1; 
     }
 
     if (n % i == 0) {
-        return 0; // n is divisible by i, not a prime number
+        return 0;r
     }
 
     return is_prime_recursive(n, i + 1);
