@@ -8,7 +8,25 @@
  */
 int _sqrt_recursion(int n) 
 {
-int result;
+	
 result = _sqrt_recursion(n, 1);
 return (result);
+
+
+int _sqrt_recursion(int n)
+{
+int result = _sqrt_recursion_helper(n, 1);
+return result;
+}
+
+int main()
+{
+int number = 25;
+int result;
+
+result = _sqrt_recursion(number);
+printf("The square root of %d is %d\n", number, result);
+
+
+return 0;
 }
