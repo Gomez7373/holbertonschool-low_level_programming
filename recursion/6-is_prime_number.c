@@ -1,7 +1,8 @@
 #include <math.h>
 
 /**
- * is_prime_recursive - Helper function to check if a number is prime recursively
+ * is_prime_recursive - Helper function to check if
+ * a number is prime recursively
  * @n: The number to check
  * @i: The current divisor being checked
  *
@@ -9,8 +10,10 @@
  */
 int is_prime_recursive(int n, int i)
 {
-	int sqrt;
-	sqrt = n;
+int sqrt;
+
+sqrt = n;
+
 if (n <= 1)
 {
 return (0);
@@ -35,6 +38,7 @@ return (is_prime_recursive(n, i + 1));
  *
  * Return: 1 if the number is prime, 0 otherwise
  */
+
 int is_prime_number(int n)
 {
 	
