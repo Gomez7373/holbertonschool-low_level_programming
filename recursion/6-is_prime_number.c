@@ -9,7 +9,8 @@
 int is_prime_number(int n)
 {
 int i;
-int sqrt_n = sqrt(n);
+int sqrt;
+sqrt = sqrt(n);
 
 if (n <= 1)
 {
