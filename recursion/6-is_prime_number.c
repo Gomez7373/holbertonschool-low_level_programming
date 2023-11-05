@@ -10,7 +10,7 @@ int is_prime_number(int n)
 {
 int i;
 int sqrt;
-
+sqrt = n;
 if (n <= 1)
 {
 return (0);
