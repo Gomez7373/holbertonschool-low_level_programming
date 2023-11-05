@@ -1,0 +1,26 @@
+#include <math.h>
+
+/**
+ * is_prime_number - Check if a number is a prime number
+ * @n: The number to check
+ *
+ * Return: 1 if the number is prime, 0 otherwise
+ */
+int is_prime_number(int n)
+{
+    int i;
+    int sqrt_n = sqrt(n);
+
+    if (n <= 1) {
+        return 0; // 0 and 1 are not prime numbers
+    }
+
+    for (i = 2; i <= sqrt_n; i++) {
+        if (n % i == 0) {
+            return 0; // n is divisible by i, not a prime number
+        }
+    }
+
+    return 1; // n is prime
+}
+
