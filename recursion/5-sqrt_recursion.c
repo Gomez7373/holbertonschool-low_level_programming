@@ -6,6 +6,6 @@
  *         If n does not have a natural square root, return -1.
  */
 int _sqrt_recursion(int n) {
-int result = _sqrt_recursion_helper(n, 1);
+int result = _sqrt_recursion(n, 1);
 return (result);
 }
