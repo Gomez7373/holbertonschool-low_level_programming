@@ -1,6 +1,30 @@
 #include <math.h>
 
 /**
+ * is_prime_recursive - Helper function to check if a number is prime recursively
+ * @n: The number to check
+ * @i: The current divisor being checked
+ *
+ * Return: 1 if the number is prime, 0 otherwise
+ */
+int is_prime_recursive(int n, int i)
+{
+    if (n <= 1) {
+        return 0; // 0 and 1 are not prime numbers
+    }
+
+    if (i > sqrt(n)) {
+        return 1; // n is prime, no divisors found
+    }
+
+    if (n % i == 0) {
+        return 0; // n is divisible by i, not a prime number
+    }
+
+    return is_prime_recursive(n, i + 1);
+}
+
+/**
  * is_prime_number - Check if a number is a prime number
  * @n: The number to check
  *
@@ -8,21 +32,6 @@
  */
 int is_prime_number(int n)
 {
-int i;
-int sqrt;
-sqrt = n;
-if (n <= 1)
-{
-return (0);
+    return is_prime_recursive(n, 2);
 }
-if (i = 2)
-else (i<= sqrt)
-i++;
-{
-if (n % i == 0)
-{
-return (0);
-}
-}
-return (1);
-}
+
