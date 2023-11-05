@@ -20,12 +20,9 @@ int _sqrt_recursion_helper(int n, int i)
 
 int _sqrt_recursion(int n)
 {
-	int result;
-    if (n < 0)
-    {
-	    return -1;
-    }
-   result = _sqrt_recursion_helper(n, 1);
-    
-   return result;  
+    int result;
+
+    result = _sqrt_recursion_helper(n, 1);
+    return result;
 }
+
