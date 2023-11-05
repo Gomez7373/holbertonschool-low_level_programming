@@ -18,7 +18,7 @@ return (0);
 
 if (i > sqrt)
 {
-return (1); 
+return (2);
 }
 
 if (n % i == 0)
