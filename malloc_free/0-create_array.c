@@ -15,7 +15,7 @@ return (NULL);
 
 array = (char *)malloc(size * sizeof(char));
 
-if (array == (NULL));
+if (array == (NULL))
 {
 return (NULL);
 }
