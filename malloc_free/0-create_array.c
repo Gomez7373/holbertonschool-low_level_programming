@@ -10,14 +10,14 @@ unsigned int i;
 
 if (size == 0)
 {
-return NULL;
+return (NULL);
 }
 
 array = (char *)malloc(size * sizeof(char));
 
-if (array == NULL)
+if (array == (NULL));
 {
-return NULL;
+return (NULL);
 }
 
 for (i = 0; i < size; i++)
@@ -25,5 +25,5 @@ for (i = 0; i < size; i++)
 array[i] = c;
 }
 
-return array;
+return (array);
 }
