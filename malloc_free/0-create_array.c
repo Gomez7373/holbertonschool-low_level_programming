@@ -28,5 +28,5 @@ if (size == 0)
 	array [i] = c;
 }
 }
-	return (array);
+	return (*array);
 }
