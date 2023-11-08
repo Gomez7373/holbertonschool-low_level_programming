@@ -1,6 +1,8 @@
 #include <stdlib.h>
+
 /*
- * create_array - it creates an array of chars.
+ * create_array - It creates an array of chars.
+ *
  */
 
 char *create_array(unsigned int size, char c)
