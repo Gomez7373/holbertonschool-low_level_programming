@@ -10,7 +10,7 @@ int **alloc_grind(int widrh, int height)
 {
 int **grid;
 int i, j;
-if (widhth <= 0 || height <= 0)
+if (widrh <= 0 || height <= 0)
 	return (NULL);
 
 grid = (int **)malloc(height * sizeof(int *))
@@ -22,15 +22,15 @@ grid = (int **)malloc(height * sizeof(int *))
 
 grid[i] = (int *)malloc(width * sizeof (int));
 
-	if (grind[i] == NULL)
+	if (grid[i] == NULL)
 	{
 	for (j = 0; j < i; j++)
 
 		free(grid[j]);
 	return (NULL);
 	}
-for (j = 0; j < width; j++)
-	gtid[i][j] = 0;
+for (j = 0; j < widrh; j++)
+	grid[i][j] = 0;
 	}
-return (grind);
+return (grid);
 }
