@@ -6,7 +6,7 @@
  *
  * Return: Apointer to the newly allocated 2D array, or NULL on failure. 
  */
-int **alloc_grind(int widrh, int height)
+int **alloc_grid(int widrh, int height)
 {
 int **grid;
 int i, j;
