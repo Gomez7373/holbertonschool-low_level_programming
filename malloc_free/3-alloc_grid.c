@@ -28,9 +28,12 @@ grid[i] = (int *)malloc(widrh * sizeof (int));
 
 		free(grid[j]);
 	return (NULL);
-	}
+}
 for (j = 0; j < widrh; j++)
-	grid[i][j] = 0;
-	}
+{
+grid[i][j] = 0;
+}
+
 return (grid);
+
 }
