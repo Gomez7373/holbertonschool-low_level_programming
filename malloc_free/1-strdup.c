@@ -2,13 +2,16 @@
 
 char *_strdup(char *str)
 {
+	unsigned int i;
+	unsigned int length;
+	char *duplicate;
+
 if (str == NULL)
 {
 return (NULL);
 }
 
-char *duplicate;
-unsigned int length = 0;
+length = 0;
 
 
 while (str[length] != '\0')
@@ -24,7 +27,7 @@ if (duplicate == NULL)
 return (NULL); 
 }
 
-for (unsigned int i = 0; i <= length; i++) 
+for (i = 0; i <= length; i++) 
 {
 duplicate[i] = str[i];
 }
