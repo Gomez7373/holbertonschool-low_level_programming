@@ -1,5 +1,4 @@
 #include <stdlib.h>
-[200~
 /**
 * _strdup - Duplicates a string.
 *@str: The string to be duplicated.
