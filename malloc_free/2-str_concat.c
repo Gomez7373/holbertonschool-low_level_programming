@@ -29,7 +29,7 @@ concatenated = (char *)malloc((len1 + len2 + 1) * sizeof(char));
 
 
 if (concatenated == NULL)
-return NULL;
+return (NULL);
 
 
 for (i = 0; i < len1; i++)
@@ -42,6 +42,6 @@ concatenated[i + j] = s2[j];
 
 concatenated[i + j] = '\0';
 
-return concatenated;
+return (concatenated);
 }
 
