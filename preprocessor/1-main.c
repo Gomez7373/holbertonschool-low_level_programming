@@ -11,7 +11,6 @@ int main(void)
 {
     float a;
     float r;
-	char PI;
     r = 98;
     a = PI * r * r;
     printf("%.3f\n", a);
