@@ -3,7 +3,7 @@
 
 int main(void)
 {
-    dog_t *my_dog;
+struct dog *my_dog;
 
     /* Creating a new dog*/
     my_dog = new_dog("Ghost", 4.75, "Jon Snow");

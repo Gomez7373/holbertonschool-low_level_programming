@@ -10,16 +10,16 @@
  *
  * Return: Pointer to the newly created struct dog, or NULL if it fails
  */
-dog_t *new_dog(char *name, float age, char *owner)
+struct dog *new_dog(char *name, float age, char *owner)
 {
-    dog_t *new_dog;
+    dog *new_dog;
 
     if (name == NULL || owner == NULL)
     {
         return NULL;
     }
 
-    new_dog = malloc(sizeof(dog_t));
+    new_dog = malloc(sizeof(struct dog));
 
     if (new_dog == NULL)
     {
@@ -50,7 +50,7 @@ dog_t *new_dog(char *name, float age, char *owner)
  * free_dog - Frees memory allocated for a struct dog
  * @d: Pointer to the struct dog to be freed
  */
-void free_dog(dog_t *d)
+void free_dog(dog *d)
 {
     if (d == NULL)
     {
