@@ -1,0 +1,66 @@
+#include <stdlib.h>
+#include <string.h>
+#include "dog.h"
+
+/**
+ * new_dog - Creates a new struct dog
+ * @name: The name of the dog
+ * @age: The age of the dog
+ * @owner: The owner of the dog
+ *
+ * Return: Pointer to the newly created struct dog, or NULL if it fails
+*/
+dog_t *new_dog(char *name, float age, char *owner)
+{
+dog_t *new_dog;
+
+if (name == NULL || owner == NULL)
+{
+return (NULL);
+}
+
+new_dog = malloc(sizeof(dog_t));
+
+if (new_dog == NULL)
+{
+return (NULL);
+}
+
+new_dog->name = strdup(name);
+if (new_dog->name == NULL)
+{
+free(new_dog);
+return (NULL);
+}
+
+new_dog->owner = strdup(owner);
+if (new_dog->owner == NULL)
+{
+free(new_dog->name);
+free(new_dog);
+return (NULL);
+}
+
+new_dog->age = age;
+
+return (new_dog); /*till here*/
+
+    /** Creating a new dog----------
+    my_dog = new_dog("Ghost", 4.75, "Jon Snow");
+    if (my_dog == NULL)
+    {
+        printf("Failed to create a new dog\n");
+        return 1;
+    }
+
+     Printing dog details---------------
+    printf("My name is %s, I am %.2f, and my owner is %s\n",
+           my_dog->name, my_dog->age, my_dog->owner);
+
+     Freeing memory for the dog----------------
+    free_dog(my_dog);
+    */
+
+    return 0;
+}
+
