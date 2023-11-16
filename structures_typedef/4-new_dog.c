@@ -23,12 +23,14 @@ struct dog *new_dog(char *name, float age, char *owner)
 
     if (new_dog == NULL)
     {
+
         return NULL;
     }
 
     new_dog->name = strdup(name);
     if (new_dog->name == NULL)
     {
+	 free(name);
         free(new_dog);
         return NULL;
     }
@@ -36,7 +38,8 @@ struct dog *new_dog(char *name, float age, char *owner)
     new_dog->owner = strdup(owner);
     if (new_dog->owner == NULL)
     {
-        free(new_dog->name);
+	    free(new_dog->name);
+	    free(new_dog->owner);
         free(new_dog);
         return NULL;
     }
@@ -49,7 +52,7 @@ struct dog *new_dog(char *name, float age, char *owner)
 /**
  * free_dog - Frees memory allocated for a struct dog
  * @d: Pointer to the struct dog to be freed
- */
+ -------------------------------------------------------
 void free_dog(struct dog *d)
 {
     if (d == NULL)
@@ -61,4 +64,4 @@ void free_dog(struct dog *d)
     free(d->owner);
     free(d);
 }
-
+*/
