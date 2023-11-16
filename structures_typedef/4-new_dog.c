@@ -16,24 +16,22 @@ dog_t *new_dog(char *name, float age, char *owner)
 
     if (name == NULL || owner == NULL)
     {
-        return NULL; /* Return NULL if name or owner is NULL */
+        return NULL;
     }
 
-    /* Allocate memory for the new dog */
     new_dog = malloc(sizeof(dog_t));
 
     if (new_dog == NULL)
     {
-        return NULL; /* Return NULL if malloc fails */
+        return NULL;
     }
 
-    /* Allocate memory for the name and owner, and copy the values */
     new_dog->name = strdup(name);
     new_dog->owner = strdup(owner);
 
     if (new_dog->name == NULL || new_dog->owner == NULL)
     {
-        /* Free allocated memory if strdup fails */
+        
         free(new_dog->name);
         free(new_dog->owner);
         free(new_dog);
