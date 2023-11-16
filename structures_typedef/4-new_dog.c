@@ -12,7 +12,7 @@
  */
 struct dog *new_dog(char *name, float age, char *owner)
 {
-    dog *new_dog;
+    struct dog *new_dog;
 
     if (name == NULL || owner == NULL)
     {
@@ -50,7 +50,7 @@ struct dog *new_dog(char *name, float age, char *owner)
  * free_dog - Frees memory allocated for a struct dog
  * @d: Pointer to the struct dog to be freed
  */
-void free_dog(dog *d)
+void free_dog(struct dog *d)
 {
     if (d == NULL)
     {
