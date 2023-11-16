@@ -42,11 +42,13 @@ struct dog *new_dog(char *name, float age, char *owner)
 	    free(new_dog->owner);
         free(new_dog);
         return NULL;
+	
     }
 
     new_dog->age = age;
 
     return new_dog;
+    free(new_dog->name);
 }
 
 /**
