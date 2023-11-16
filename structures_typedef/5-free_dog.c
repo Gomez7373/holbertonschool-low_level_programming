@@ -9,11 +9,11 @@ void free_dog(dog_t *d)
 {
     if (d == NULL)
     {
-        return; // Nothing to free if the pointer is NULL
+        return;
     }
 
-    free(d->name);   // Free memory for name
-    free(d->owner);  // Free memory for owner
-    free(d);         // Free memory for the struct dog
+    free(d->name);
+    free(d->owner);
+    free(d);
 }
 
