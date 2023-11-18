@@ -2,6 +2,7 @@
 #include <stddef.h>
 #include <stdio.h>
 #include <stdlib.h>
+
 /**
 * get_op_func - selects the correct function to perform the operation
 * @s: operator passed as argument to the program
@@ -18,7 +19,6 @@ op_t ops[] =
 {"/", op_div},
 {"%", op_mod},
 {NULL, NULL}
-
 };
 int i = 0;
 
