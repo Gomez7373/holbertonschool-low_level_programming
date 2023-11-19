@@ -60,6 +60,7 @@ ___
  */
 
 >  int main(void) 
+
 >  { 
 * int sum;
 
