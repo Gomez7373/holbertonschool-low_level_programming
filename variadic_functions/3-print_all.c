@@ -21,30 +21,37 @@
  *
  * ...: Variable number of arguments based on the format.
  */
-void print_all(const char *const format, ...)
+void print_all(const char * const format, ...)
 {
-    va_list args;
-    unsigned int i = 0;
-    char *str;
+va_list args;
+unsigned int i;
+char *str;
+int comma_needed = 0;
 
-    va_start(args, format);
+va_start(args, format);
 
-    while (format && format[i])
-    {
-        if ((format[i] == 'c' && (printf("%c", va_arg(args, int)), va_arg(args, int), 1)) ||
-            (format[i] == 'i' && (printf("%d", va_arg(args, int)), va_arg(args, int), 1)) ||
-            (format[i] == 'f' && (printf("%f", va_arg(args, double)), va_arg(args, double), 1)) ||
-            ((format[i] == 's' && ((str = va_arg(args, char *)) ? (printf("%s", str), 1) : (printf("(nil)"), 1))) &&
-            format[i + 1] != '\0'))
-        {
-            printf(", ");
-        }
+while (format && format[i])
+{
+while (format[i] != 'c' && format[i] != 'i' && format[i] != 'f' && format[i] != 's')
+i++;
 
-        i++;
-    }
+str = NULL;
 
-    printf("\n");
+comma_needed = (format[i] == 'c' && printf("%c", va_arg(args, int))) ||
+(format[i] == 'i' && printf("%d", va_arg(args, int))) ||
+(format[i] == 'f' && printf("%f", va_arg(args, double))) ||
+(format[i] == 's' && (
+(str = va_arg(args, char *)),
+(str != NULL ? printf("%s", str) : printf("(nil)"))));
 
-    va_end(args);
+i++;
+}
+
+if (comma_needed)
+printf(", ");
+
+printf("\n");
+
+va_end(args);
 }
 
