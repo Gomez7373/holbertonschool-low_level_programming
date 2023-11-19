@@ -133,10 +133,10 @@ ___
 
 * #include "variadic_functions.h"
 
-* /**
+/**
  * main - check the code
  * Return: Always 0.
-* */
+*/
 
 > int main(void)
 
@@ -147,6 +147,8 @@ ___
 > return (0);
 
 > }
+
+*COMPILE*
 
 * gcc -Wall -pedantic -Werror -Wextra -std=gnu89 1-main.c 1-print_numbers.c -o b
 
