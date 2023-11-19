@@ -11,11 +11,16 @@ void print_all(const char * const format, ...)
 
     while (format && format[i])
     {
-        if (format[i] == 'c') printf("%c", va_arg(args, int));
-        if (format[i] == 'i') printf("%d", va_arg(args, int));
-        if (format[i] == 'f') printf("%f", va_arg(args, double));
-        if (format[i] == 's') printf("%s", (str = va_arg(args, char *)) ? str : "(nil)");
-        if (format[i + 1] != '\0' && (format[i] == 'c' || format[i] == 'i' || format[i] == 'f' || format[i] == 's')) printf(", ");
+        if ((format[i] == 'c' || format[i] == 'i' || format[i] == 'f' || format[i] == 's') &&
+            (format[i] == 'c' ? printf("%c", va_arg(args, int)), 1 :
+             format[i] == 'i' ? printf("%d", va_arg(args, int)), 1 :
+             format[i] == 'f' ? printf("%f", va_arg(args, double)), 1 :
+             format[i] == 's' ? (str = va_arg(args, char *)) ? printf("%s", str) : printf("(nil)"), 1 : 0) &&
+            format[i + 1] != '\0')
+        {
+            printf(", ");
+        }
+
         i++;
     }
 
