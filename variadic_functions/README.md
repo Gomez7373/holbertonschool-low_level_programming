@@ -37,17 +37,21 @@ At the end of this project, you are expected to be able to explain to anyone, wi
 * Don’t forget to push your header file
 * All your header files should be include guarded
 
-#Tasks
+
+#Tasks:
+
 ___
 #0-sum_them_all.c
 * Write a function that returns the sum of all its parameters.
 
 * Prototype: int sum_them_all(const unsigned int n, ...);
 * If n == 0, return 0
+---
+`0-main.c`
 
-> 0-main.c
 #include <stdio.h>
 #include "variadic_functions.h"
+/*
 
 /*
  * main - check the code
@@ -55,18 +59,19 @@ ___
  * Return: Always 0.
  */
 
-* int main(void) 
-* { 
-* int sum;
+int main(void) 
+{ 
+int sum;
 
-> sum = sum_them_all(2, 98, 1024);
-> printf("%d\n", sum);
-> sum = sum_them_all(4, 98, 1024, 402, -1024);
-> printf("%d\n", sum);    
-> return (0);
-> }
-> $ gcc -Wall -pedantic -Werror -Wextra -std=gnu89 0-main.c 0-sum_them_all.c -o a
-> $ ./a
+ sum = sum_them_all(2, 98, 1024);
+ printf("%d\n", sum);
+ sum = sum_them_all(4, 98, 1024, 402, -1024);
+ printf("%d\n", sum);    
+ return (0);
+}
+
+ $ gcc -Wall -pedantic -Werror -Wextra -std=gnu89 0-main.c 0-sum_them_all.c -o a
+ $ ./a
 ___
 
-
+*/
