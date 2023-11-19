@@ -9,10 +9,11 @@
 #man or help:
 
 * stdarg
-
+___
 #Learning Objectives
 
 At the end of this project, you are expected to be able to explain to anyone, without the help of Google:
+___
 
 #General
 
@@ -21,6 +22,7 @@ At the end of this project, you are expected to be able to explain to anyone, wi
 * Why and how to use the const type qualifier
 
 #Requirements
+
 #General
 
 * Allowed editors: vi, vim, emacs
