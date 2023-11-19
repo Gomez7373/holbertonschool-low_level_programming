@@ -2,7 +2,7 @@
 ---
 `Read or watch:`
 
-* stdarg.h
+* stdarg.h = https://en.wikipedia.org/wiki/Stdarg.h 
 * Variadic Functions
 * Const Keyword
 #man or help:
