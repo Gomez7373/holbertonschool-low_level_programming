@@ -1,4 +1,5 @@
 #Resources
+
 `Read or watch:`
 
 * stdarg.h
@@ -57,7 +58,8 @@ ___
  * main - check the code
  *
  * Return: Always 0.
- */
+ 
+*/
 
 >  int main(void) 
 
