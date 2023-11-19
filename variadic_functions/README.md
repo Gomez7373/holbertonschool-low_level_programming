@@ -22,7 +22,7 @@ ___
 * Why and how to use the const type qualifier
 ___
 #Requirements
-___
+---
 #General
 
 * Allowed editors: vi, vim, emacs
