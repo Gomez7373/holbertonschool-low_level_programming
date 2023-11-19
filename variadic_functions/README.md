@@ -86,4 +86,8 @@ ___
 * $ ./a
 ___
 
+Repo:
 
+GitHub repository: holbertonschool-low_level_programming
+Directory: variadic_functions
+File: 0-sum_them_all.c
