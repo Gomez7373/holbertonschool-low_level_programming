@@ -59,8 +59,8 @@ ___
  * Return: Always 0.
  */
 
-* int main(void) 
-* { 
+>  int main(void) 
+>  { 
 * int sum;
 
 * sum = sum_them_all(2, 98, 1024);
