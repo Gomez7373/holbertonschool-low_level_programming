@@ -55,9 +55,9 @@ ___
  * Return: Always 0.
  */
 
-> int main(void)
-> {
-> int sum;
+* int main(void) 
+* { 
+* int sum;
 
 > sum = sum_them_all(2, 98, 1024);
 > printf("%d\n", sum);
