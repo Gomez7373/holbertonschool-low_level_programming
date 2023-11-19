@@ -30,8 +30,8 @@ va_start(args, format);
 
 while (format && format[i])
 {
-if ((format[i] == 'c' || format[i] == 'i' || format[i]
-== 'f' || format[i] == 's') &&
+if ((format[i] == 'c' || format[i] == 'i' || format[i]== 'f' || format[i] == 's')
+&&
 (format[i] == 'c' ? printf("%c", va_arg(args, int)), 1 :
 format[i] == 'i' ? printf("%d", va_arg(args, int)), 1 :
 format[i] == 'f' ? printf("%f", va_arg(args, double)), 1 :
