@@ -41,7 +41,7 @@ At the end of this project, you are expected to be able to explain to anyone, wi
 #Tasks:
 
 ___
-#0-sum_them_all.c
+`0-sum_them_all.c`
 * Write a function that returns the sum of all its parameters.
 
 * Prototype: int sum_them_all(const unsigned int n, ...);
