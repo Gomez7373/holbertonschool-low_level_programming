@@ -15,6 +15,6 @@ while (current != NULL)
 next = current->next;
 free(current->str); /*free the duplicatrd string*/
 free(current); /*free the current node*/
-current=next;
+current = next;
 }
 }
