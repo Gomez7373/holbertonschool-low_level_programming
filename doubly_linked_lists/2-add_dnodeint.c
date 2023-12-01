@@ -18,7 +18,7 @@ new_node = malloc(sizeof(dlistint_t));
 if (new_node == NULL)
 {
 perror("Error: Unable to allocate memory for new node");
-return NULL;
+return (NULL);
 }
 
 /* Set the value of the new node */
@@ -37,5 +37,5 @@ if (*head != NULL)
 /* Update the head to point to the new node */
 *head = new_node;
 
-return new_node;
+return (new_node);
 }
