@@ -2,10 +2,11 @@
 #include <stdio.h>
 
 /*
- *print_dlistint - Prints all the elements of a dlistint_t list
- *@h: A pointer to the head of the dobly linked list.*
+ * print_dlistint - Prints all the elements of a dlistint_t list
  *
- *Return: The number of nodes in the list.
+ * @h: A pointer to the head of the dobly linked list.*
+ *
+ * Return: The number of nodes in the list.
  */
 
 
