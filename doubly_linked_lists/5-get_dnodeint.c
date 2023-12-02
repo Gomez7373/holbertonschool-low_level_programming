@@ -16,7 +16,7 @@ while (current != NULL)
 {
 if (count == index)
 {
-return current; /* Found the node at the specified index */
+return (current); /* Found the node at the specified index */
 }
 
 current = current->next;
