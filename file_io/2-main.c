@@ -10,7 +10,7 @@
 * Return: 1 on success, -1 on failure.
 *         -1 if filename is NULL, if the file does not exist,
 *         or if permissions are insufficient.
-*/
+**/
 int append_text_to_file(const char *filename, char *text_content)
 {
 int file_descriptor;
