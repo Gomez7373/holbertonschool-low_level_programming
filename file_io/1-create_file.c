@@ -11,7 +11,8 @@
 * Return: 1 on success, -1 on failure.
 *         -1 if filename is NULL or if the file can't be created/written.
 */
-int create_file(const char *filename, char *text_content) {
+int create_file(const char *filename, char *text_content)
+{
 int file_descriptor;
 
 if (filename == NULL)
@@ -26,12 +27,16 @@ open(filename, O_WRONLY | O_CREAT | O_TRUNC, S_IRUSR | S_IWUSR);
 if (file_descriptor == -1)
 return (-1);  /* File couldn't be opened/created */
 
-if (text_content != NULL) {
+if (text_content != NULL)
+{
+
 /* Write text_content to the file */
+
 ssize_t write_result =
 write(file_descriptor,text_content, strlen(text_content));
 
-if (write_result == -1) {
+if (write_result == -1)
+{
 close(file_descriptor);
 return (-1);  /* Write operation failed */
 }
