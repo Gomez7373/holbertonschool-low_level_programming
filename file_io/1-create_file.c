@@ -4,7 +4,8 @@
 #include <sys/types.h>
 #include <string.h>
 
-/* create_file - Creates or truncates a file and writes content to it.
+/** 
+* create_file - Creates or truncates a file and writes content to it.
 * filename: Name of the file to create or truncate.
 * text_content: NULL-terminated string to write to the file.
 *
@@ -33,7 +34,7 @@ if (text_content != NULL)
 /* Write text_content to the file */
 
 ssize_t write_result =
-write(file_descriptor,text_content, strlen(text_content));
+write(file_descriptor, text_content, strlen(text_content));
 
 if (write_result == -1)
 {
