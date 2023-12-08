@@ -19,9 +19,9 @@ int file_descriptor;
 if (filename == NULL)
 return (-1);
 
-/* Open the file with read and write permissions,
-* create if not exists, truncate if exists
-*/
+/* Open the file with read and write permissions*/
+/* create if not exists, truncate if exists*/
+
 file_descriptor =
 open(filename, O_WRONLY | O_CREAT | O_TRUNC, S_IRUSR | S_IWUSR);
 if (file_descriptor == -1)
