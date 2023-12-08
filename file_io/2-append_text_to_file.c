@@ -1,7 +1,7 @@
 #include <fcntl.h>
 #include <unistd.h>
 #include <string.h>
-
+#include "main.h"
 /*
 * append_text_to_file - Appends text at the end of a file.
 * @filename: Name of the file.
@@ -13,10 +13,12 @@
 */
 int append_text_to_file(const char *filename, char *text_content)
 {
+int file_descriptor;
+
 if (filename == NULL)
 return (-1);
 
-int file_descriptor = open(filename, O_WRONLY | O_APPEND)
+file_descriptor = open(filename, O_WRONLY | O_APPEND);
 
 if (file_descriptor == -1)
 return (-1);  /* File couldn't be opened or doesn't exist */
