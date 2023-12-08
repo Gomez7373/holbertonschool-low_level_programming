@@ -8,22 +8,23 @@
 #define BUFFER_SIZE 1024
 
 /**
- * print_error - Print an error message and exit.
- * @exit_code: The exit code.
- * @message: The error message format.
- * @file_name: The name of the file.
- * @fd: The file descriptor value.
- */
-void print_error(int exit_code, const char *message, const char *file_name, int fd) {
-    dprintf(STDERR_FILENO, message, file_name, fd);
-    exit(exit_code);
+* print_error - Print an error message and exit.
+* @exit_code: The exit code.
+* @message: The error message format.
+* @file_name: The name of the file.
+* @fd: The file descriptor value.
+*/
+void print_error(int exit_code, const char *message, const char *file_name, int fd)
+{
+dprintf(STDERR_FILENO, message, file_name, fd);
+exit(exit_code);
 }
 
 /**
- * main - Copy the content of a file to another file.
- * @argc: The number of arguments.
- * @argv: The array of arguments.
- *
+* main - Copy the content of a file to another file.
+* @argc: The number of arguments.
+* @argv: The array of arguments.
+*
 * Return: 0 on success, or an exit code on failure.
 */
 int main(int argc, char *argv[])
@@ -45,8 +46,8 @@ print_error(98, "Error: Can't read from file %s\n", argv[1], file_from);
 }
 
 file_to =
-open(argv[2],
-O_WRONLY | O_CREAT | O_TRUNC, S_IRUSR | S_IWUSR | S_IRGRP | S_IWGRP | S_IROTH);
+open(argv[2], O_WRONLY | O_CREAT | O_TRUNC,
+S_IRUSR | S_IWUSR | S_IRGRP | S_IWGRP | S_IROTH);
 if (file_to == -1)
 {
 print_error(99, "Error: Can't write to file %s\n", argv[2], file_to);
