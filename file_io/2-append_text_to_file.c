@@ -24,13 +24,11 @@ file_descriptor = open(filename, O_WRONLY | O_APPEND);
 if (file_descriptor == -1)
 return (-1);  /* File couldn't be opened or doesn't exist */
 
-if (text_content != NULL)
-{
+if (text_content != NULL) {
 ssize_t write_result =
 write(file_descriptor, text_content, strlen(text_content));
 
-if (write_result == (-1)
-{
+if (write_result == -1) {
 close(file_descriptor);
 return (-1);  /* Write operation failed */
 }
