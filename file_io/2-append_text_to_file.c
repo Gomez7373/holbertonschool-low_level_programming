@@ -16,7 +16,7 @@ int append_text_to_file(const char *filename, char *text_content)
 if (filename == NULL)
 return (-1);
 
-int file_descriptor = open(filename, O_WRONLY | O_APPEND);
+int file_descriptor = open(filename, O_WRONLY | O_APPEND)
 
 if (file_descriptor == -1)
 return (-1);  /* File couldn't be opened or doesn't exist */
