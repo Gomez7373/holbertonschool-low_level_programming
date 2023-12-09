@@ -1,13 +1,13 @@
-#include "main.h"
 #include <stdarg.h>
-
+#include "main.h"
 /**
  * print_error - prints error message to STDERR
  * @code: error code
  * @format: error message format
  * @...: additional arguments for format
  */
-void print_error(int code, const char *format, ...) {
+void print_error(int code, const char *format, ...)
+{
     va_list args;
     va_start(args, format);
     dprintf(STDERR_FILENO, "Error: ");
@@ -24,7 +24,8 @@ void print_error(int code, const char *format, ...) {
  *
  * Return: 0 Success
  */
-int main(int argc, char *argv[]) {
+int main(int argc, char *argv[])
+{
     int file_from, file_to, num1 = 1024, num2 = 0;
     char buffer[1024];
 
@@ -37,7 +38,8 @@ int main(int argc, char *argv[]) {
     if (file_to == -1)
         print_error(99, "Can't write to %s", argv[2]);
 
-    while (num1 == 1024) {
+    while (num1 == 1024)
+    {
         num1 = read(file_from, buffer, 1024);
         if (num1 == -1)
             print_error(98, "Can't read from file %s", argv[1]);
