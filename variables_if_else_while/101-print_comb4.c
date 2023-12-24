@@ -1,5 +1,5 @@
 #include <unistd.h>
-
+#include <stdio.h>
 /* Function prototypes */
 void print_digit_combinations(void);
 
