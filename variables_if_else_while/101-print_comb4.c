@@ -4,7 +4,7 @@
 /* Function prototypes */
 void print_digit_combinations(void);
 
-/*
+/**
 * main - Entry point of the program.
 *
 * Return: Always 0 (success).
@@ -13,10 +13,10 @@ int main(void)
 {
 /* Call the function to print digit combinations */
 print_digit_combinations();
-return 0;
+return (0);
 }
 
-/*
+/**
 * print_digit_combinations - Prints all possible combinations of three digits.
 *
 * Description:
@@ -48,6 +48,6 @@ putchar(' ');
 }
 }
 
-putchar('\n');
+    putchar('\n');
 }
 
