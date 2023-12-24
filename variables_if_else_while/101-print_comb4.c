@@ -1,9 +1,10 @@
-#include <unistd.h>
 #include <stdio.h>
+#include <unistd.h>
+
 /* Function prototypes */
 void print_digit_combinations(void);
 
-/* 
+/*
 * main - Entry point of the program.
 *
 * Return: Always 0 (success).
