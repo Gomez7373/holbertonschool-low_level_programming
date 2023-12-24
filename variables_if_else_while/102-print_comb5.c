@@ -16,8 +16,8 @@ return (0);
 }
 
 /**
-* print_combinations - Prints all possible combinations of two two-digit numbers.
-*
+* print_combinations - Prints all possible combinations of
+*  two two-digit numbers.
 * Description:
 * The function uses nested loops to iterate through all possible combinations
 * of two two-digit numbers. It ensures that the combinations are printed in
