@@ -11,7 +11,8 @@ CFLAGS := -Wall -Werror -Wextra -pedantic
 all: $(NAME)
 
 $(NAME): $(OBJ)
-	$(CC) $(OBJ) -o $@
+	@compiler_cmd="$(CC) $(OBJ) -o $@"; \
+	$$compiler_cmd
 
 clean:
 	-@$(RM) *~ $(NAME) clean
