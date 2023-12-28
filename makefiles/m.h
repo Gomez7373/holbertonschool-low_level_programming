@@ -7,7 +7,7 @@
 void print_school(void);
 
 
-	print_school();
+//	print_school();
 //	return (EXIT_SUCCESS);
 
 #endif
