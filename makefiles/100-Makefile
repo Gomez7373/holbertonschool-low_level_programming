@@ -11,8 +11,7 @@ CFLAGS := -Wall -Werror -Wextra -pedantic
 all: $(NAME)
 
 $(NAME): $(OBJ)
-	@compiler_cmd="$(CC) $(OBJ) -o $@"; \
-	$$compiler_cmd
+	$(CC) $(OBJ) -o $@
 
 clean:
 	-@$(RM) *~ $(NAME) clean
@@ -25,7 +24,7 @@ fclean: clean oclean
 
 re: fclean all
 
-# Ensure that the Makefile does not compile if m.h is missing
+# Ensures that the Makefile does not compile if m.h is missing
 ifeq (,$(wildcard m.h))
 $(error "m.h not found!")
 endif
