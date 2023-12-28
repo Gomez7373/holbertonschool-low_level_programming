@@ -5,13 +5,14 @@ OBJ := $(SRC:.c=.o)
 NAME := school
 RM := rm -f
 CFLAGS := -Wall -Werror -Wextra -pedantic
+COMPILE = $(CC) $(OBJ) -o $@
 
 .PHONY: all clean oclean fclean re
 
 all: $(NAME)
 
 $(NAME): $(OBJ)
-	$(CC) $(OBJ) -o $@
+	@$(COMPILE)
 
 clean:
 	-@$(RM) *~ $(NAME) clean
@@ -24,7 +25,7 @@ fclean: clean oclean
 
 re: fclean all
 
-# Ensures that the Makefile does not compile if m.h is missing
+# Ensure that the Makefile does not compile if m.h is missing
 ifeq (,$(wildcard m.h))
 $(error "m.h not found!")
 endif
