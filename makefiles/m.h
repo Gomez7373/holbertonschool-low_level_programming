@@ -5,8 +5,9 @@
 #include <stdio.h>
 
 void print_school(void);
-{
+
+
 	print_school();
-	return (EXIT_SUCCESS);
-}
+//	return (EXIT_SUCCESS);
+
 #endif
