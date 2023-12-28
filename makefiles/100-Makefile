@@ -1,6 +1,6 @@
 CC = gcc
 SRC = 0-Makefile    1-Makefile  3-Makefile  main.c  README.md
- 2-Makefile  4-Makefile  m.h     school.c
+ 2-Makefile  4-Makefile  m.h     school.c  100-Makefile
 OBJ = $(SRC:.c=.o)
 NAME = school
 RM := rm -f
