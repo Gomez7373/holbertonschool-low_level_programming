@@ -1,8 +1,8 @@
-CC = gcc
-SRC = 0-Makefile    1-Makefile  3-Makefile  main.c  README.md
- 2-Makefile  4-Makefile  m.h     school.c  100-Makefile
-OBJ = $(SRC:.c=.o)
-NAME = school
+CC := gcc
+SRC := 0-Makefile 1-Makefile 3-Makefile main.c README.md \
+        2-Makefile 4-Makefile m.h school.c 100-Makefile
+OBJ := $(SRC:.c=.o)
+NAME := school
 RM := rm -f
 CFLAGS := -Wall -Werror -Wextra -pedantic
 
@@ -14,13 +14,13 @@ $(NAME): $(OBJ)
 	$(CC) $(OBJ) -o $@
 
 clean:
-	-$(RM) *~ $(NAME) clean
+	-@$(RM) *~ $(NAME) clean
 
 oclean:
-	-$(RM) $(OBJ) oclean
+	-@$(RM) $(OBJ) oclean
 
 fclean: clean oclean
-	-$(RM) fclean
+	-@$(RM) fclean
 
 re: fclean all
 
