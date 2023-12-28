@@ -1,28 +1,28 @@
 CC = gcc
-SRC = $(wildcard *.c)
+SRC = 0-Makefile    1-Makefile  3-Makefile  main.c  README.md
+ 2-Makefile  4-Makefile  m.h     school.c
 OBJ = $(SRC:.c=.o)
 NAME = school
-RM = rm -f
-CFLAGS = -Wall -Werror -Wextra -pedantic
+RM := rm -f
+CFLAGS := -Wall -Werror -Wextra -pedantic
 
 .PHONY: all clean oclean fclean re
 
 all: $(NAME)
 
 $(NAME): $(OBJ)
-	$(CC) $(OBJ) -o $(NAME)
+	$(CC) $(OBJ) -o $@
 
 clean:
-	$(RM) *~ $(NAME)
+	-$(RM) *~ $(NAME) clean
 
 oclean:
-	$(RM) $(OBJ)
+	-$(RM) $(OBJ) oclean
 
 fclean: clean oclean
+	-$(RM) fclean
 
 re: fclean all
-
-$(OBJ): $(wildcard *.h)
 
 # Ensure that the Makefile does not compile if m.h is missing
 ifeq (,$(wildcard m.h))
