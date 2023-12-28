@@ -1,5 +1,5 @@
 CC = gcc
-SRC = main.c school.c
+SRC = $(wildcard *.c)
 OBJ = $(SRC:.c=.o)
 NAME = school
 RM = rm -f
@@ -12,17 +12,20 @@ all: $(NAME)
 $(NAME): $(OBJ)
 	$(CC) $(OBJ) -o $(NAME)
 
-%.o: %.c
-	$(CC) $(CFLAGS) -c $< -o $@
-
 clean:
-	$(RM) *~ $(NAME) *~ \#*\#
+	$(RM) *~ $(NAME)
 
 oclean:
 	$(RM) $(OBJ)
 
 fclean: clean oclean
-	$(RM) $(NAME)
 
 re: fclean all
+
+$(OBJ): $(wildcard *.h)
+
+# Ensure that the Makefile does not compile if m.h is missing
+ifeq (,$(wildcard m.h))
+$(error "m.h not found!")
+endif
 
