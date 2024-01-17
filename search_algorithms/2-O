@@ -1,0 +1,12 @@
+# Linear Search Time Complexity
+
+**O(n)**: Worst-case, iterates through the array to find the target.
+
+## Worst-Case Scenario
+
+Occurs when the target is at the end or not present.
+
+## Big O Notation
+
+O(n): Linear growth with array size.
+
